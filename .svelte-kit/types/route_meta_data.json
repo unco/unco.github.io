@@ -6,6 +6,9 @@
 	"/leveling": [
 		"src/routes/+layout.js"
 	],
+	"/prism": [
+		"src/routes/+layout.js"
+	],
 	"/toys": [
 		"src/routes/+layout.js"
 	],
