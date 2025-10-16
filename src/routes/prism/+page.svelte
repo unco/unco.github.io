@@ -15,7 +15,7 @@
   { "question": "Am I solving a symptom or the underlying need?", "category": "Responsive" },
   { "question": "Have I reduced this design to its simplest useful form?", "category": "Responsive" },
   { "question": "Could someone understand this at a glance?", "category": "Responsive" },
-  { "question": "What’s the riskiest point of confusion — and how am I handling it?", "category": "Responsive" },
+  { "question": "What’s the riskiest point of confusion and how am I handling it?", "category": "Responsive" },
 
   { "question": "What’s the one behavior this design most encourages?", "category": "Impactful" },
   { "question": "Does this meaningfully improve someone’s workflow or life?", "category": "Impactful" },
@@ -36,11 +36,12 @@
   { "question": "Have I added humanity without clutter or gimmicks?", "category": "Masterful" },
   { "question": "Would I be proud to show this in a design museum exhibit?", "category": "Masterful" },
   { "question": "Have I checked alignment, spacing, and hierarchy with fresh eyes?", "category": "Masterful" },
-  { "question": "Would this make someone smile — even on a bad day?", "category": "Masterful" }
+  { "question": "Would this make someone smile even on a bad day?", "category": "Masterful" }
 ];
 
 let question = {question:'', category:''};
 let sidepanel = false;
+let questionator = true;
 
 function getRandomQuestion() {
     const randomIndex = Math.floor(Math.random() * questions.length);
@@ -56,13 +57,25 @@ onMount(() => {
 
 
 
-<h1>PRISM UX design excellence framework </h1>
-<blockquote>
-    <em>{question.question}</em> <br> <button class='p-chip' on:click={()=>{ sidepanel = !sidepanel}}>{question.category}</button>
-</blockquote>
+<h1>PRISM UX design excellence Questionator™ </h1>
 
-<button class="btn" on:click={getRandomQuestion}>New question</button>
+{#if questionator}
+    <p>This tool is designed to help UX designers at Canonical quickly access random questions from the PRISM framework. By clicking the "New question" button, designers can receive a random question that encourages thoughtful consideration of their design choices. This can be particularly useful during brainstorming sessions, design reviews, or when seeking inspiration to enhance user experience. The questions are categorized into five key areas: Principled, Responsive, Impactful, Systemic, and Masterful, each focusing on different aspects of design excellence.</p>
 
+    <blockquote>
+        <em>{question.question}</em> <br> <button class='p-chip' on:click={()=>{ sidepanel = !sidepanel}}>{question.category}</button>
+    </blockquote>
+
+    <button class="btn" on:click={getRandomQuestion}>New question</button> &nbsp;&nbsp; <a href="#" on:click={()=>{ questionator = !questionator}}>View all</a>
+{:else}
+    <p>This is the full list of PRISM questions.</p>
+    <ul>
+        {#each questions as q}
+                <li>{q.question}<button class='p-chip' on:click={()=>{ sidepanel = !sidepanel}}>{q.category}</button>
+        {/each}
+    </ul>
+    <a href="#" on:click={()=>{ questionator = !questionator}}>Back to questionator</a><br><br><br><br>
+{/if}
 
 
 {#if sidepanel}
@@ -87,6 +100,7 @@ onMount(() => {
 
 
 <style>
+    p {max-width: 800px;}
     blockquote {
         border-left: 3px solid #e95420;
         margin: 1.5rem 0;
@@ -95,6 +109,7 @@ onMount(() => {
     }
     blockquote em {
         font-style: normal;
+        font-size: 2em;
     }
     .btn {
         font-family: 'Ubuntu Sans', sans-serif;
@@ -152,12 +167,18 @@ onMount(() => {
         max-width: 100%;
         padding: calc(.25rem - 1.5px) .5rem;
         position: relative;
-        -webkit-user-select: none;
+        cursor: pointer;
+        /*-webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
+        */
         vertical-align: calc(1.5px - .375rem);
         white-space: nowrap;
         font-size: 12px;
+    }
+    li .p-chip {
+        vertical-align: 1.5px;
+        transform: scale(80%);
     }
     .sidepanel {
         position: fixed;
