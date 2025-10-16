@@ -3,10 +3,10 @@
 		"src/routes/+layout.js",
 		"src/routes/+layout.js"
 	],
-	"/leveling": [
+	"/crisp": [
 		"src/routes/+layout.js"
 	],
-	"/prism": [
+	"/leveling": [
 		"src/routes/+layout.js"
 	],
 	"/toys": [

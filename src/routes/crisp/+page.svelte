@@ -3,6 +3,14 @@
 
 
     let questions = [
+
+  { "question": "Where does this design spark a small moment of joy?", "category": "Crafted" },
+  { "question": "Does this feel generic, or does it have a voice?", "category": "Crafted" },
+  { "question": "Have I added humanity without clutter or gimmicks?", "category": "Crafted" },
+  { "question": "Would I be proud to show this in a design museum exhibit?", "category": "Crafted" },
+  { "question": "Have I checked alignment, spacing, and hierarchy with fresh eyes?", "category": "Crafted" },
+  { "question": "Would this make someone smile even on a bad day?", "category": "Crafted" },
+
   { "question": "Am I being fully transparent about what’s happening here?", "category": "Principled" },
   { "question": "Does this design respect the user’s time and attention?", "category": "Principled" },
   { "question": "If this pattern were used against me, would I feel tricked?", "category": "Principled" },
@@ -29,14 +37,7 @@
   { "question": "Am I aligning with platform conventions (CLI, SDK, APIs) where it builds trust?", "category": "Systemic" },
   { "question": "Does this solution integrate cleanly into existing workflows or tools?", "category": "Systemic" },
   { "question": "Have I considered performance, reliability, and security in the design?", "category": "Systemic" },
-  { "question": "Does this design help make complex systems feel coherent, not chaotic?", "category": "Systemic" },
-
-  { "question": "Where does this design spark a small moment of joy?", "category": "Masterful" },
-  { "question": "Does this feel generic, or does it have a voice?", "category": "Masterful" },
-  { "question": "Have I added humanity without clutter or gimmicks?", "category": "Masterful" },
-  { "question": "Would I be proud to show this in a design museum exhibit?", "category": "Masterful" },
-  { "question": "Have I checked alignment, spacing, and hierarchy with fresh eyes?", "category": "Masterful" },
-  { "question": "Would this make someone smile even on a bad day?", "category": "Masterful" }
+  { "question": "Does this design help make complex systems feel coherent, not chaotic?", "category": "Systemic" }
 ];
 
 let question = {question:'', category:''};
@@ -57,10 +58,10 @@ onMount(() => {
 
 
 
-<h1>PRISM UX design excellence Questionator™ </h1>
+<h1>CRISP UX design excellence Questionator™ </h1>
 
 {#if questionator}
-    <p>This tool is designed to help UX designers at Canonical quickly access random questions from the PRISM framework. By clicking the "New question" button, designers can receive a random question that encourages thoughtful consideration of their design choices. This can be particularly useful during brainstorming sessions, design reviews, or when seeking inspiration to enhance user experience. The questions are categorized into five key areas: Principled, Responsive, Impactful, Systemic, and Masterful, each focusing on different aspects of design excellence.</p>
+    <p>This tool is designed to help UX designers at Canonical quickly access random questions from the CRISP framework. By clicking the "New question" button, designers can receive a random question that encourages thoughtful consideration of their design choices. This can be particularly useful during brainstorming sessions, design reviews, or when seeking inspiration to enhance user experience. The questions are categorized into five key areas: Crafted, Responsive, Impactful, Systemic, and Principled, each focusing on different aspects of design excellence.</p>
 
     <blockquote>
         <em>{question.question}</em> <br> <button class='p-chip' on:click={()=>{ sidepanel = !sidepanel}}>{question.category}</button>
@@ -68,7 +69,7 @@ onMount(() => {
 
     <button class="btn" on:click={getRandomQuestion}>New question</button> &nbsp;&nbsp; <a href="#" on:click={()=>{ questionator = !questionator}}>View all</a>
 {:else}
-    <p>This is the full list of PRISM questions.</p>
+    <p>This is the full list of CRISP questions.</p>
     <ul>
         {#each questions as q}
                 <li>{q.question}<button class='p-chip' on:click={()=>{ sidepanel = !sidepanel}}>{q.category}</button>
@@ -86,14 +87,14 @@ onMount(() => {
         <p>PRISM is a <a href="https://www.figma.com/proto/8Rmni55f2mvo9c5Efhv5sA/Untitled?node-id=1-2971&t=jL9P701hgZDddNe3-0&scaling=contain&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=1%3A2971" target="_blank">UX design excellence framework</a> for Canonical. It consists of 30 questions divided into 5 categories: Principled, Responsive, Impactful, Systemic, and Masterful. The framework is designed to help UX designers evaluate their designs and ensure they design with intent.</p>
         <h3>Categories:</h3>
         <ul>
-            <li><strong>Principled:</strong> Is it acting with integrity, ethics and inclusiveness?</li>
+            <li><strong>Crafted:</strong> Does it go beyond average, strive for excellence, create delight?</li>
             <li><strong>Responsive:</strong> Is it responding to real user needs at the root?</li>
             <li><strong>Impactful:</strong> Is it moving the needle for both user and business?</li>
             <li><strong>Systemic:</strong> Does it deeply understand the technology and technicality of the problem and solve in a Canonical Design way?</li>
-            <li><strong>Masterful:</strong> Does it go beyond average, strive for excellence, create delight?</li>
+            <li><strong>Principled:</strong> Is it acting with integrity, ethics and inclusiveness?</li>
         </ul>
 
-        <p>Using the PRISM framework can help designers create more thoughtful, user-centered designs that not only meet business goals but also provide a positive experience for users of our deeply technical products.</p>  
+        <p>Using the CRISP framework can help designers create more thoughtful, user-centered designs that not only meet business goals but also provide a positive experience for users of our deeply technical products.</p>  
     </div> 
 {/if}
 
