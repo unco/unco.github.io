@@ -83,8 +83,8 @@ onMount(() => {
     <div class='sidepanel'>
         <button class="p-modal__close" on:click={()=>{ sidepanel = false}}>Close</button>
         
-        <h1>About PRISM</h1>
-        <p>PRISM is a <a href="https://www.figma.com/proto/8Rmni55f2mvo9c5Efhv5sA/Untitled?node-id=1-2971&t=jL9P701hgZDddNe3-0&scaling=contain&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=1%3A2971" target="_blank">UX design excellence framework</a> for Canonical. It consists of 30 questions divided into 5 categories: Principled, Responsive, Impactful, Systemic, and Masterful. The framework is designed to help UX designers evaluate their designs and ensure they design with intent.</p>
+        <h1>About CRISP</h1>
+        <p>CRISP is a <a href="https://www.figma.com/proto/8Rmni55f2mvo9c5Efhv5sA/Untitled?node-id=1-2971&t=jL9P701hgZDddNe3-0&scaling=contain&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=1%3A2971" target="_blank">UX design excellence framework</a> for Canonical. It consists of 30 questions divided into 5 categories: Principled, Responsive, Impactful, Systemic, and Masterful. The framework is designed to help UX designers evaluate their designs and ensure they design with intent.</p>
         <h3>Categories:</h3>
         <ul>
             <li><strong>Crafted:</strong> Does it go beyond average, strive for excellence, create delight?</li>
