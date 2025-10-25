@@ -1,9 +1,9 @@
-import { g, o, c, d, e, s } from "./chunks/internal.js";
+import { g, c, d, e, f, s } from "./chunks/internal.js";
 export {
   g as get_hooks,
-  o as options,
-  c as set_assets,
-  d as set_building,
-  e as set_private_env,
+  c as options,
+  d as set_assets,
+  e as set_building,
+  f as set_private_env,
   s as set_public_env
 };

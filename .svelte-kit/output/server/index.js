@@ -1,4 +1,4 @@
-import { b as base, a as assets, r as reset, p as public_env, o as options, g as get_hooks, s as set_public_env } from "./chunks/internal.js";
+import { b as base, a as assets, o as override, r as reset, p as public_env, c as options, g as get_hooks, s as set_public_env } from "./chunks/internal.js";
 import * as devalue from "devalue";
 import { w as writable, r as readable } from "./chunks/index.js";
 import { parse, serialize } from "cookie";
@@ -1312,6 +1312,7 @@ async function render_response({
       data: data2,
       form: form_value
     };
+    override({ base: base$1, assets: assets$1 });
     {
       try {
         rendered = options2.root.render(props);
