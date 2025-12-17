@@ -564,7 +564,7 @@
             {/if}
         </td>
         <td>
-            <img src="../img/{mb.img.url}" alt="{mb.img.alt}" title="{mb.img.alt}" />
+            <img src="./img/{mb.img.url}" alt="{mb.img.alt}" title="{mb.img.alt}" />
         </td>
     </tr>
     {/each}

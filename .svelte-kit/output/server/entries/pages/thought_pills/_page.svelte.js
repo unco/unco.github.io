@@ -527,7 +527,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
             ${mb.quote ? `<blockquote class="svelte-1yaxsdd"><em class="svelte-1yaxsdd">${escape(mb.quote.text)}</em> <br> <p>— ${escape(mb.quote.attr)}</p>
                 </blockquote>` : ``}</td>
-        <td class="svelte-1yaxsdd"><img src="${"../img/" + escape(mb.img.url, true)}"${add_attribute("alt", mb.img.alt, 0)}${add_attribute("title", mb.img.alt, 0)} class="svelte-1yaxsdd"></td>
+        <td class="svelte-1yaxsdd"><img src="${"./img/" + escape(mb.img.url, true)}"${add_attribute("alt", mb.img.alt, 0)}${add_attribute("title", mb.img.alt, 0)} class="svelte-1yaxsdd"></td>
     </tr>`;
   })}
 </table>`;
