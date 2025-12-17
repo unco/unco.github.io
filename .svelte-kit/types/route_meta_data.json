@@ -9,6 +9,9 @@
 	"/leveling": [
 		"src/routes/+layout.js"
 	],
+	"/thought_pills": [
+		"src/routes/+layout.js"
+	],
 	"/toys": [
 		"src/routes/+layout.js"
 	],

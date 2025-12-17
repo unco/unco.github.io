@@ -1,6 +1,148 @@
-import { o as onDestroy, g as get_store_value, s as setContext, c as create_ssr_component, a as subscribe, f as set_store_value, d as add_attribute, h as getContext, t as tick, i as createEventDispatcher, v as validate_component, b as each, e as escape } from "../../../../chunks/index2.js";
+import { c as create_ssr_component, d as add_attribute, v as validate_component, b as each, e as escape, o as onDestroy, g as get_store_value, s as setContext, a as subscribe, f as set_store_value, h as getContext, t as tick, i as createEventDispatcher } from "../../../../chunks/index2.js";
 import { p as page } from "../../../../chunks/stores.js";
 import { d as derived, w as writable, r as readable } from "../../../../chunks/index.js";
+/* empty css                                                      */const css$4 = {
+  code: ".row.svelte-1vq0jo4.svelte-1vq0jo4{overflow:auto}.glyph.svelte-1vq0jo4.svelte-1vq0jo4{box-sizing:border-box;float:left}.glyph.svelte-1vq0jo4>div.svelte-1vq0jo4{width:80%;height:80%;background-size:contain;background-repeat:no-repeat;margin:10%}.glyph.hover_target.svelte-1vq0jo4.svelte-1vq0jo4:not(.empty):hover{background-color:#e95420}.glyphs_container.svelte-1vq0jo4.svelte-1vq0jo4{width:100%;height:100%}",
+  map: null
+};
+const Glyphs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let shell;
+  let { hover_target: hover_target2 = true } = $$props;
+  let { glyph_break: glyph_break2 = 0.4 } = $$props;
+  let { blank_fill: blank_fill2 = false } = $$props;
+  let { glyph_grid = [] } = $$props;
+  let { single_target: single_target2 } = $$props;
+  let { iterations = 10 } = $$props;
+  let { initial_ms = 300 } = $$props;
+  if ($$props.hover_target === void 0 && $$bindings.hover_target && hover_target2 !== void 0)
+    $$bindings.hover_target(hover_target2);
+  if ($$props.glyph_break === void 0 && $$bindings.glyph_break && glyph_break2 !== void 0)
+    $$bindings.glyph_break(glyph_break2);
+  if ($$props.blank_fill === void 0 && $$bindings.blank_fill && blank_fill2 !== void 0)
+    $$bindings.blank_fill(blank_fill2);
+  if ($$props.glyph_grid === void 0 && $$bindings.glyph_grid && glyph_grid !== void 0)
+    $$bindings.glyph_grid(glyph_grid);
+  if ($$props.single_target === void 0 && $$bindings.single_target && single_target2 !== void 0)
+    $$bindings.single_target(single_target2);
+  if ($$props.iterations === void 0 && $$bindings.iterations && iterations !== void 0)
+    $$bindings.iterations(iterations);
+  if ($$props.initial_ms === void 0 && $$bindings.initial_ms && initial_ms !== void 0)
+    $$bindings.initial_ms(initial_ms);
+  $$result.css.add(css$4);
+  return `<div class="glyphs_container svelte-1vq0jo4"${add_attribute("this", shell, 0)}>${``}
+</div>`;
+});
+const css$3 = {
+  code: ".win.svelte-1qfryrb{display:flex;flex-direction:row;width:100%;height:100%}.glyphs.svelte-1qfryrb{width:60%;height:100%}.panel.svelte-1qfryrb{width:40%;height:100%}",
+  map: null
+};
+let single_target$1 = false;
+let hover_target$1 = true;
+let blank_fill$1 = false;
+const Glyph = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let breaker = 20;
+  let glyph_break2 = 0;
+  let glyphlist = [
+    "?",
+    "",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41"
+  ];
+  let g = glyphlist[14];
+  let glyph_grid = [
+    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
+    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
+    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
+    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
+    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
+    breaker[g],
+    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
+    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
+    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
+    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g]
+  ];
+  $$result.css.add(css$3);
+  {
+    {
+      glyph_break2 = breaker / 100;
+    }
+  }
+  {
+    {
+      let temp_row = [];
+      for (let i = 0; i < 10; i++) {
+        let temp_col = [];
+        for (let j = 0; j < 17; j++) {
+          {
+            JSON.stringify(glyph_grid);
+          }
+          temp_col.push(g);
+        }
+        temp_row.push(temp_col);
+      }
+      glyph_break2 = breaker / 100;
+      glyph_grid = temp_row;
+    }
+  }
+  return `<div class="win svelte-1qfryrb"><div class="glyphs svelte-1qfryrb">${glyph_grid ? `${validate_component(Glyphs, "Glyphs").$$render(
+    $$result,
+    {
+      glyph_grid,
+      single_target: single_target$1,
+      blank_fill: blank_fill$1,
+      glyph_break: glyph_break2,
+      hover_target: hover_target$1
+    },
+    {},
+    {}
+  )}` : ``}</div>
+  <div class="panel svelte-1qfryrb">Glyph
+    <select>${each(glyphlist, (glyph) => {
+    return `<option${add_attribute("value", glyph, 0)}>${escape(glyph)}</option>`;
+  })}</select>
+
+   Decay <button>-</button> <button>+</button> ${escape(breaker)}</div>
+</div>`;
+});
 /**
  * @license
  * Copyright 2010-2023 Three.js Authors
@@ -8278,7 +8420,7 @@ const useParentSize = () => {
   };
 };
 const Canvas_svelte_svelte_type_style_lang = "";
-const css$4 = {
+const css$2 = {
   code: "canvas.svelte-15bl8wt{display:block}",
   map: null
 };
@@ -8344,7 +8486,7 @@ const Canvas = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.rootCtx(rootCtx);
   if ($$props.audioCtx === void 0 && $$bindings.audioCtx && audioCtx !== void 0)
     $$bindings.audioCtx(audioCtx);
-  $$result.css.add(css$4);
+  $$result.css.add(css$2);
   {
     userSize.set(size);
   }
@@ -9628,7 +9770,7 @@ function useTexture(paths, options) {
   }
 }
 const suru_svelte_svelte_type_style_lang = "";
-const css$3 = {
+const css$1 = {
   code: ".suru_wrapper.svelte-ek39oa.svelte-ek39oa{height:100%;width:100%}.settings-toggle.svelte-ek39oa.svelte-ek39oa{display:inline-block;margin-right:40px;cursor:pointer\n  }.settings-wrapper.svelte-ek39oa.svelte-ek39oa{overflow:auto}.btn.svelte-ek39oa.svelte-ek39oa{padding:4px 8px;border-radius:4px;display:inline-block;border:1px solid #eee;margin-right:4px}.btn.selected.svelte-ek39oa.svelte-ek39oa{background:#eee\n  }.control-wrapper.svelte-ek39oa.svelte-ek39oa{float:left;width:50%}.control.svelte-ek39oa.svelte-ek39oa{display:block;font-size:12px}.control-wrapper.svelte-ek39oa .header.svelte-ek39oa{text-transform:uppercase;font-size:10px;color:#666666;letter-spacing:1px;margin-top:10px}.label.svelte-ek39oa.svelte-ek39oa{display:inline-block;width:200px}.fav.svelte-ek39oa.svelte-ek39oa{padding:0}.fav.svelte-ek39oa a.svelte-ek39oa{display:inline-block;color:#666666;text-decoration:none;padding:4px 8px;border-left:1px solid #eee}.fav.svelte-ek39oa a.svelte-ek39oa:hover{background:#eee}.fav.svelte-ek39oa a.svelte-ek39oa:first-child{border-left:none}.canvas-wrapper.svelte-ek39oa.svelte-ek39oa{position:relative;height:100%;margin-top:40px}.html-overlay.svelte-ek39oa.svelte-ek39oa{position:absolute;height:100%;width:100%;top:0;left:0;text-align:center}.fake-header.svelte-ek39oa.svelte-ek39oa{width:100%;height:70px;background-image:url('/fake-header.png');background-position:top center;background-repeat:no-repeat;background-size:contain}.page-header.svelte-ek39oa.svelte-ek39oa{width:80%;margin:0 auto;text-transform:uppercase;line-height:40px;border-bottom:1px solid #ccc;text-align:left;letter-spacing:2px;font-size:14px}.dark.svelte-ek39oa .page-header.svelte-ek39oa{color:#999;border-bottom:1px solid #666}h1.svelte-ek39oa.svelte-ek39oa{font-size:2.8em;width:50%;margin:60px auto;text-align:left}.dark.svelte-ek39oa h1.svelte-ek39oa{color:#fff}.search.svelte-ek39oa.svelte-ek39oa{width:50%;margin:0 auto;text-align:left}.search.svelte-ek39oa input.svelte-ek39oa{height:32px;background:#e7e7e7;outline:none;border:none;border-bottom:1px solid #626262;;;width:50%;padding:0 16px;vertical-align:top}.search.svelte-ek39oa .btn.svelte-ek39oa{background:#0C8420;color:#fff;height:33px;padding:0 16px;line-height:34px;border-radius:0;border:none}",
   map: null
 };
@@ -9668,7 +9810,7 @@ const Suru = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   ];
   async function anim() {
   }
-  $$result.css.add(css$3);
+  $$result.css.add(css$1);
   {
     {
       anim();
@@ -9807,174 +9949,30 @@ const Suru = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   ${``}</div>
 </div>`;
 });
-const glyphs_svelte_svelte_type_style_lang = "";
-const css$2 = {
-  code: ".row.svelte-1vq0jo4.svelte-1vq0jo4{overflow:auto}.glyph.svelte-1vq0jo4.svelte-1vq0jo4{box-sizing:border-box;float:left}.glyph.svelte-1vq0jo4>div.svelte-1vq0jo4{width:80%;height:80%;background-size:contain;background-repeat:no-repeat;margin:10%}.glyph.hover_target.svelte-1vq0jo4.svelte-1vq0jo4:not(.empty):hover{background-color:#e95420}.glyphs_container.svelte-1vq0jo4.svelte-1vq0jo4{width:100%;height:100%}",
-  map: null
-};
-const Glyphs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let shell;
-  let { hover_target: hover_target2 = true } = $$props;
-  let { glyph_break: glyph_break2 = 0.4 } = $$props;
-  let { blank_fill: blank_fill2 = false } = $$props;
-  let { glyph_grid = [] } = $$props;
-  let { single_target: single_target2 } = $$props;
-  let { iterations = 10 } = $$props;
-  let { initial_ms = 300 } = $$props;
-  if ($$props.hover_target === void 0 && $$bindings.hover_target && hover_target2 !== void 0)
-    $$bindings.hover_target(hover_target2);
-  if ($$props.glyph_break === void 0 && $$bindings.glyph_break && glyph_break2 !== void 0)
-    $$bindings.glyph_break(glyph_break2);
-  if ($$props.blank_fill === void 0 && $$bindings.blank_fill && blank_fill2 !== void 0)
-    $$bindings.blank_fill(blank_fill2);
-  if ($$props.glyph_grid === void 0 && $$bindings.glyph_grid && glyph_grid !== void 0)
-    $$bindings.glyph_grid(glyph_grid);
-  if ($$props.single_target === void 0 && $$bindings.single_target && single_target2 !== void 0)
-    $$bindings.single_target(single_target2);
-  if ($$props.iterations === void 0 && $$bindings.iterations && iterations !== void 0)
-    $$bindings.iterations(iterations);
-  if ($$props.initial_ms === void 0 && $$bindings.initial_ms && initial_ms !== void 0)
-    $$bindings.initial_ms(initial_ms);
-  $$result.css.add(css$2);
-  return `<div class="glyphs_container svelte-1vq0jo4"${add_attribute("this", shell, 0)}>${``}
-</div>`;
-});
 const love_svelte_svelte_type_style_lang = "";
-const css$1 = {
+const css = {
   code: "h1.svelte-hvpd2t.svelte-hvpd2t{text-align:center;margin-top:100px}h1.svelte-hvpd2t span.svelte-hvpd2t{display:inline-block;width:256px;height:64px;vertical-align:middle;margin-left:32px}",
   map: null
 };
-let single_target$1 = false;
-let hover_target$1 = false;
-let blank_fill$1 = true;
+let single_target = false;
+let hover_target = false;
+let blank_fill = true;
 let glyph_break = 0;
 const Love = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let glyph_grid = [["29", "18", "28", "8"]];
-  $$result.css.add(css$1);
-  return `<h1 class="svelte-hvpd2t">Made by Canonical with<span class="svelte-hvpd2t">${validate_component(Glyphs, "Glyphs").$$render(
-    $$result,
-    {
-      glyph_grid,
-      single_target: single_target$1,
-      blank_fill: blank_fill$1,
-      glyph_break,
-      hover_target: hover_target$1
-    },
-    {},
-    {}
-  )}</span></h1>`;
-});
-const glyph_svelte_svelte_type_style_lang = "";
-const css = {
-  code: ".win.svelte-1qfryrb{display:flex;flex-direction:row;width:100%;height:100%}.glyphs.svelte-1qfryrb{width:60%;height:100%}.panel.svelte-1qfryrb{width:40%;height:100%}",
-  map: null
-};
-let single_target = false;
-let hover_target = true;
-let blank_fill = false;
-const Glyph = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let breaker = 20;
-  let glyph_break2 = 0;
-  let glyphlist = [
-    "?",
-    "",
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "11",
-    "12",
-    "13",
-    "14",
-    "15",
-    "16",
-    "17",
-    "18",
-    "19",
-    "20",
-    "21",
-    "22",
-    "23",
-    "24",
-    "25",
-    "26",
-    "27",
-    "28",
-    "29",
-    "30",
-    "31",
-    "32",
-    "33",
-    "34",
-    "35",
-    "36",
-    "37",
-    "38",
-    "39",
-    "40",
-    "41"
-  ];
-  let g = glyphlist[14];
-  let glyph_grid = [
-    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
-    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
-    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
-    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
-    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
-    breaker[g],
-    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
-    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
-    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g],
-    [g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g, g]
-  ];
   $$result.css.add(css);
-  {
-    {
-      glyph_break2 = breaker / 100;
-    }
-  }
-  {
-    {
-      let temp_row = [];
-      for (let i = 0; i < 10; i++) {
-        let temp_col = [];
-        for (let j = 0; j < 17; j++) {
-          {
-            JSON.stringify(glyph_grid);
-          }
-          temp_col.push(g);
-        }
-        temp_row.push(temp_col);
-      }
-      glyph_break2 = breaker / 100;
-      glyph_grid = temp_row;
-    }
-  }
-  return `<div class="win svelte-1qfryrb"><div class="glyphs svelte-1qfryrb">${glyph_grid ? `${validate_component(Glyphs, "Glyphs").$$render(
+  return `<h1 class="svelte-hvpd2t">Made by Canonical with<span class="svelte-hvpd2t">${validate_component(Glyphs, "Glyphs").$$render(
     $$result,
     {
       glyph_grid,
       single_target,
       blank_fill,
-      glyph_break: glyph_break2,
+      glyph_break,
       hover_target
     },
     {},
     {}
-  )}` : ``}</div>
-  <div class="panel svelte-1qfryrb">Glyph
-    <select>${each(glyphlist, (glyph) => {
-    return `<option${add_attribute("value", glyph, 0)}>${escape(glyph)}</option>`;
-  })}</select>
-
-   Decay <button>-</button> <button>+</button> ${escape(breaker)}</div>
-</div>`;
+  )}</span></h1>`;
 });
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $page, $$unsubscribe_page;
