@@ -577,7 +577,7 @@
                 {
                     "text": "How language affects color",
                     "url": "https://www.youtube.com/watch?v=mgxyfqHRPoE",
-                    "description": "Tealish"
+                    "description": "Teal-ish"
                 }
             ],
             "img": {
