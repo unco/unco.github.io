@@ -512,6 +512,60 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         }
       ],
       "img": { url: "mb39.png", alt: "Oh I wish" }
+    },
+    {
+      "mb": 40,
+      "author": "Hayden",
+      "pills": [
+        {
+          "text": "Design leadership",
+          "url": "https://medium.com/defining-experience/what-i-no-longer-believe-about-design-leadership-6fa5ab237d91",
+          "description": "One of the more crisp thinkers on the current changes in design orgs"
+        },
+        {
+          "text": "Consent? What’s that?",
+          "url": "https://productpicnic.beehiiv.com/p/the-ai-age-is-the-age-of-no-consent-7559",
+          "description": "AI, consent, and the lack thereof"
+        },
+        {
+          "text": "Let’s jam",
+          "url": "https://uxdesign.cc/design-leaders-need-to-jam-with-their-teams-3e05fabd4c38",
+          "description": "Why design jams are fruitful (see what I did there?)"
+        }
+      ],
+      "img": {
+        url: "mb40.png",
+        alt: "Rick Poyner is consistently interesting"
+      },
+      "quote": {
+        text: "Strong designers don’t wait for alignment to emerge. They create it by making the call, and holding the line long enough for others to orient.",
+        attr: "Rachel Kobetz - CDO Paypal"
+      }
+    },
+    {
+      "mb": 41,
+      "author": "Timea",
+      "pills": [
+        {
+          "text": "Relevant design (graphic and UX) trends of the year",
+          "url": "https://www.youtube.com/watch?v=bT1tG_E8g-4",
+          "description": "Staying up to date"
+        },
+        {
+          "text": "How do we perceive time?",
+          "url": "https://www.polytechnique-insights.com/en/columns/neuroscience/brain-how-do-we-experience-time/",
+          "description": "You know, a lotta ins, a lotta outs, lotta what-have-yous."
+        },
+        {
+          "text": "How language affects color",
+          "url": "https://www.youtube.com/watch?v=mgxyfqHRPoE",
+          "description": "Teal-ish"
+        }
+      ],
+      "img": {
+        url: "mb41.png",
+        alt: "Life in technicolor: teal edition"
+      }
     }
   ];
   let mbs_ordered = mbs.sort((a, b) => b.mb - a.mb);
