@@ -566,6 +566,31 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         url: "mb41.png",
         alt: "Life in technicolor: teal edition"
       }
+    },
+    {
+      "mb": 42,
+      "author": "Miguel",
+      "pills": [
+        {
+          "text": "Vibe coded agentic OS + everything SAAS = MicroSlop",
+          "url": "https://www.youtube.com/watch?v=DsTlxRKkPyY",
+          "description": "Calling all QAs"
+        },
+        {
+          "text": "Effects of AI on the maintainer/contributor",
+          "url": "https://www.youtube.com/watch?v=uZy1M_s-8zs",
+          "description": "You want to pull request what??"
+        },
+        {
+          "text": "Mafia engagement survey results",
+          "url": "https://www.youtube.com/watch?v=BN6Zl0zP108",
+          "description": "Considering a career change?"
+        }
+      ],
+      "img": {
+        url: "mb42.png",
+        alt: "My name is Miguel and I love tomatoes"
+      }
     }
   ];
   let mbs_ordered = mbs.sort((a, b) => b.mb - a.mb);
