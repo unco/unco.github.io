@@ -847,7 +847,7 @@
             ],
             "img": {
                 url: "mb50.png",
-                alt: "Bad AI"
+                alt: "Who the face?"
             }
         },
         {
@@ -937,6 +937,7 @@
         border-left: 3px solid #e95420;
         margin: 1.5rem 0;
         padding-left: 1rem;
+        padding-right: 20px;
         font-style: normal;
     }
     blockquote em {

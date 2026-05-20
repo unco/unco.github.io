@@ -1,7 +1,7 @@
 import { c as create_ssr_component, b as each, e as escape, d as add_attribute } from "../../../chunks/index2.js";
 /* empty css                                                   */const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "table.svelte-1yaxsdd.svelte-1yaxsdd{width:100%}tr.svelte-1yaxsdd td.svelte-1yaxsdd{border-bottom:1px solid #eee;padding:20px 0;width:50%;vertical-align:top}img.svelte-1yaxsdd.svelte-1yaxsdd{max-width:400px;border:12px solid #fff;box-shadow:0 0 32px rgba(0,0,0,0.2)}blockquote.svelte-1yaxsdd.svelte-1yaxsdd{border-left:3px solid #e95420;margin:1.5rem 0;padding-left:1rem;font-style:normal}blockquote.svelte-1yaxsdd em.svelte-1yaxsdd{font-style:normal;font-size:2em}ul.svelte-1yaxsdd.svelte-1yaxsdd{padding:0 }ul.svelte-1yaxsdd ul{margin:0;text-indent:0;padding:16px}ul.svelte-1yaxsdd a.svelte-1yaxsdd{color:#111}",
+  code: "table.svelte-1b7ly30.svelte-1b7ly30{width:100%}tr.svelte-1b7ly30 td.svelte-1b7ly30{border-bottom:1px solid #eee;padding:20px 0;width:50%;vertical-align:top}img.svelte-1b7ly30.svelte-1b7ly30{max-width:400px;border:12px solid #fff;box-shadow:0 0 32px rgba(0,0,0,0.2)}blockquote.svelte-1b7ly30.svelte-1b7ly30{border-left:3px solid #e95420;margin:1.5rem 0;padding-left:1rem;padding-right:20px;font-style:normal}blockquote.svelte-1b7ly30 em.svelte-1b7ly30{font-style:normal;font-size:2em}ul.svelte-1b7ly30.svelte-1b7ly30{padding:0 }ul.svelte-1b7ly30 ul{margin:0;text-indent:0;padding:16px}ul.svelte-1b7ly30 a.svelte-1b7ly30{color:#111}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -817,7 +817,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           "description": "Notion's custom agents are a masterclass in storytelling and product design"
         }
       ],
-      "img": { url: "mb50.png", alt: "Bad AI" }
+      "img": { url: "mb50.png", alt: "Who the face?" }
     },
     {
       "mb": 51,
@@ -854,16 +854,16 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<h1>Thought-pills</h1>
 
-<table class="svelte-1yaxsdd">${each(mbs_ordered, (mb) => {
-    return `<tr class="svelte-1yaxsdd"><td class="svelte-1yaxsdd"><h2>Minibus ${escape(mb.mb)} - by ${escape(mb.author)}</h2>
-            <ul class="svelte-1yaxsdd">${each(mb.pills, (pill) => {
-      return `<li>${pill.url == "#" ? `<!-- HTML_TAG_START -->${pill.text}<!-- HTML_TAG_END -->` : `<a${add_attribute("href", pill.url, 0)} target="_blank"${add_attribute("title", pill.description, 0)} class="svelte-1yaxsdd">${escape(pill.text)}</a>`}
+<table class="svelte-1b7ly30">${each(mbs_ordered, (mb) => {
+    return `<tr class="svelte-1b7ly30"><td class="svelte-1b7ly30"><h2>Minibus ${escape(mb.mb)} - by ${escape(mb.author)}</h2>
+            <ul class="svelte-1b7ly30">${each(mb.pills, (pill) => {
+      return `<li>${pill.url == "#" ? `<!-- HTML_TAG_START -->${pill.text}<!-- HTML_TAG_END -->` : `<a${add_attribute("href", pill.url, 0)} target="_blank"${add_attribute("title", pill.description, 0)} class="svelte-1b7ly30">${escape(pill.text)}</a>`}
                     </li>`;
     })}</ul>
 
-            ${mb.quote ? `<blockquote class="svelte-1yaxsdd"><em class="svelte-1yaxsdd">${escape(mb.quote.text)}</em> <br> <p>— ${escape(mb.quote.attr)}</p>
+            ${mb.quote ? `<blockquote class="svelte-1b7ly30"><em class="svelte-1b7ly30">${escape(mb.quote.text)}</em> <br> <p>— ${escape(mb.quote.attr)}</p>
                 </blockquote>` : ``}</td>
-        <td class="svelte-1yaxsdd"><img src="${"./img/" + escape(mb.img.url, true)}"${add_attribute("alt", mb.img.alt, 0)}${add_attribute("title", mb.img.alt, 0)} class="svelte-1yaxsdd"></td>
+        <td class="svelte-1b7ly30"><img src="${"./img/" + escape(mb.img.url, true)}"${add_attribute("alt", mb.img.alt, 0)}${add_attribute("title", mb.img.alt, 0)} class="svelte-1b7ly30"></td>
     </tr>`;
   })}
 </table>`;
