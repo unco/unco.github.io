@@ -7,57 +7,10 @@ export const manifest = {
 		client: {"start":"_app/immutable/entry/start.3f880a93.js","app":"_app/immutable/entry/app.82aecf18.js","imports":["_app/immutable/entry/start.3f880a93.js","_app/immutable/chunks/index.1da13e83.js","_app/immutable/chunks/singletons.749b7606.js","_app/immutable/chunks/index.ab634804.js","_app/immutable/entry/app.82aecf18.js","_app/immutable/chunks/index.1da13e83.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
-			() => import('./nodes/1.js'),
-			() => import('./nodes/2.js'),
-			() => import('./nodes/3.js'),
-			() => import('./nodes/4.js'),
-			() => import('./nodes/5.js'),
-			() => import('./nodes/6.js'),
-			() => import('./nodes/7.js')
+			() => import('./nodes/1.js')
 		],
 		routes: [
-			{
-				id: "/",
-				pattern: /^\/$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 2 },
-				endpoint: null
-			},
-			{
-				id: "/crisp",
-				pattern: /^\/crisp\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 3 },
-				endpoint: null
-			},
-			{
-				id: "/leveling",
-				pattern: /^\/leveling\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 4 },
-				endpoint: null
-			},
-			{
-				id: "/thought_pills",
-				pattern: /^\/thought_pills\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 5 },
-				endpoint: null
-			},
-			{
-				id: "/toys",
-				pattern: /^\/toys\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 6 },
-				endpoint: null
-			},
-			{
-				id: "/toys/[toy]",
-				pattern: /^\/toys\/([^/]+?)\/?$/,
-				params: [{"name":"toy","optional":false,"rest":false,"chained":false}],
-				page: { layouts: [0,], errors: [1,], leaf: 7 },
-				endpoint: null
-			}
+			
 		],
 		matchers: async () => {
 			
