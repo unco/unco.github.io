@@ -591,6 +591,263 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         url: "mb42.png",
         alt: "My name is Miguel and I love tomatoes"
       }
+    },
+    {
+      "mb": 43,
+      "author": "Hayden",
+      "pills": [
+        {
+          "text": "The AI wars have begun",
+          "url": "https://www.youtube.com/watch?v=FBSam25u8O4",
+          "description": "AI advertising and the war between the big players."
+        },
+        {
+          "text": "The times they are a changin",
+          "url": "https://www.youtube.com/watch?v=_acdhjOLvBs",
+          "description": "When Designers Start Shipping Real Code: Emmet Connolly from Intercom via Hatch Conference"
+        },
+        {
+          "text": "Care",
+          "url": "https://www.youtube.com/shorts/-YHRb2S4uvg",
+          "description": "Don't forget to breathe in and breathe out"
+        },
+        {
+          "text": "Meatspace career",
+          "url": "https://the-decoder.com/a-new-platform-lets-ai-agents-pay-humans-to-do-the-real-world-work-they-cant/",
+          "description": "Who's getting automated?"
+        },
+        {
+          "text": "Get your eye in",
+          "url": "https://method.ac/type/",
+          "description": "Design is also a physical skill"
+        },
+        {
+          "text": "Early 2000s internet culture",
+          "url": "https://www.youtube.com/watch?v=Bloiue3mSuA",
+          "description": "A fun jaunt into the past, and a reminder of how much the internet has changed in 30 years"
+        }
+      ],
+      "img": { url: "mb43.png", alt: "Love your mother" }
+    },
+    {
+      "mb": 44,
+      "author": "Hartmut",
+      "pills": [
+        {
+          "text": "Choose your friends wisely",
+          "url": "https://www.youtube.com/watch?v=-MluR9dqt5w",
+          "description": "Model selection matters"
+        },
+        {
+          "text": "See  the upcoming Miro board!",
+          "url": "https://miro.com/app/board/uXjVGCWMT-E=/",
+          "description": "What is craft?"
+        },
+        {
+          "text": "The end of the office",
+          "url": "https://blog.andrewyang.com/p/the-end-of-the-office?hide_intro_popup=truev",
+          "description": "The great disemboweling of white-collar jobs"
+        }
+      ],
+      "img": { url: "mb44.png", alt: "Love your mother" }
+    },
+    {
+      "mb": 45,
+      "author": "Hayden",
+      "pills": [
+        {
+          "text": "The internet as morse code",
+          "url": "https://www.youtube.com/shorts/ZWqqdLDILDI",
+          "description": "Your view will change"
+        },
+        {
+          "text": "AI theatre",
+          "url": "https://uxdesign.cc/the-ai-adoption-theatre-when-innovation-becomes-performance-fd03bb16b0ce",
+          "description": "When innovation becomes performance"
+        },
+        {
+          "text": "What/who are we designing for?",
+          "url": "https://uxdesign.cc/youre-still-designing-for-an-architecture-that-no-longer-exists-28b0b10900dd",
+          "description": "The entire choreography of operating had disappeared"
+        }
+      ],
+      "img": {
+        url: "mb45.png",
+        alt: "How -> What, Assist -> Act, Configure -> Evolve"
+      },
+      "quote": {
+        text: "The space where we work is being replaced by something structurally different. And if you’re still designing screens, flows, and navigation systems, you might be perfecting the blueprint of a building that’s already been demolished.",
+        attr: "Adrian Levy"
+      }
+    },
+    {
+      "mb": 46,
+      "author": "Hayden",
+      "pills": [
+        {
+          "text": "Changing shape of things to come",
+          "url": "https://www.perplexity.ai/hub/blog/the-ai-is-the-computer",
+          "description": "The AI is the computer"
+        },
+        {
+          "text": "Outcomes over output",
+          "url": "https://www.amazon.com/Outcomes-Over-Output-customer-behavior-ebook/dp/B07QJ1Y8Y5",
+          "description": "Book recommendation"
+        },
+        {
+          "text": "Machine access denied",
+          "url": "https://www.applause.com/blog/why-automated-accessibility-testing-tools-miss-so-much/",
+          "description": "Why automated accessibility testing tools miss so much"
+        }
+      ],
+      "img": {
+        url: "mb46.png",
+        alt: "A brave new world"
+      }
+    },
+    {
+      "mb": 47,
+      "author": "Ana",
+      "pills": [
+        {
+          "text": "Everything is AI now",
+          "url": "https://ixdf.org/master-classes/get-ahead-in-product-design-with-ai",
+          "description": "Course recommendation"
+        },
+        {
+          "text": "The UX of feelings",
+          "url": "https://www.edisonprimary.org/assets/Uploads/Zones-of-Regulation-Parents-Handout.pdf",
+          "description": "A Parents’ Guide to the Zones of Regulation"
+        },
+        {
+          "text": "Popcorn with your news",
+          "url": "https://www.britishpathe.com/",
+          "description": "Explore the world's finest newsreel archives"
+        }
+      ],
+      "img": {
+        url: "mb47.png",
+        alt: "It's OK to feel all the feels"
+      }
+    },
+    {
+      "mb": 48,
+      "author": "Hayden",
+      "pills": [
+        {
+          "text": "The changing process",
+          "url": "https://goodenoughdesigner.substack.com/p/how-i-use-claude-code-to-vibe-code?r=284net&utm_medium=ios&triedRedirect=true",
+          "description": "Why a design system is so important"
+        },
+        {
+          "text": "Doom data viz",
+          "url": "https://gertvanvugt.substack.com/p/the-final-frontiers",
+          "description": "Every major technology displaced workers"
+        },
+        {
+          "text": "The last interface",
+          "url": "https://uxdesign.cc/the-last-interface-6f488a54fc4e",
+          "description": "Will AI agents kill design as we know it?"
+        }
+      ],
+      "img": {
+        url: "mb48.png",
+        alt: "What do you call pre-change-nostalgia?"
+      }
+    },
+    {
+      "mb": 49,
+      "author": "Juan",
+      "pills": [
+        {
+          "text": "MCP vs API",
+          "url": "https://www.youtube.com/watch?v=7j1t3UZA1TY",
+          "description": "Why a design system is so important"
+        },
+        {
+          "text": "We need to breathe",
+          "url": "https://www.instagram.com/reel/DW9oUhWjp1R/",
+          "description": "Percolation time"
+        },
+        {
+          "text": "Dystopia",
+          "url": "https://www.anthropic.com/research/agentic-misalignment",
+          "description": "The call is coming from inside the house"
+        },
+        {
+          "text": "Competition is good",
+          "url": "https://www.theverge.com/tech/909140/microsoft-windows-11-fixes-macbook-neo-response-notepad?view_token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6InZPcjJWN1ZyZTgiLCJwIjoiL3RlY2gvOTA5MTQwL21pY3Jvc29mdC13aW5kb3dzLTExLWZpeGVzLW1hY2Jvb2stbmVvLXJlc3BvbnNlLW5vdGVwYWQiLCJleHAiOjE3NzY2NzIwMTUsImlhdCI6MTc3NjI0MDAxNX0.tY_xCW6r2p5mzMoEjUl3aeg1R9sDx1BgcHadcN5CUns&utm_medium=gift-link",
+          "description": "Wakeup call for Microsoft"
+        },
+        {
+          "text": "Bonus: How to be happy",
+          "url": "https://www.nytimes.com/interactive/2025/04/28/magazine/how-to-be-happy.html?unlocked_article_code=1.bFA.BhVx.kPNZpxodhHH1&smid=url-share",
+          "description": "Grinches hate this one trick"
+        }
+      ],
+      "img": { url: "mb49.png", alt: "Bad AI" }
+    },
+    {
+      "mb": 50,
+      "author": "Timea",
+      "pills": [
+        {
+          "text": "An opinionated view of Claude design",
+          "url": "https://www.youtube.com/watch?v=IksDIJzfXg8",
+          "description": "Obsolete in 3... 2... 1..."
+        },
+        {
+          "text": "Designing for LLMs",
+          "url": "https://uxdesign.cc/dear-llm-heres-how-my-design-system-works-b59fb9a342b7",
+          "description": "How to get production-ready code from AI by structuring design systems"
+        },
+        {
+          "text": "A romance scam",
+          "url": "https://www.youtube.com/watch?v=rjxAYdUe8uU",
+          "description": "Tinder's facecheck sucks"
+        },
+        {
+          "text": "Semantic modelling for enterprises",
+          "url": "https://github.com/canonical/semantic-modelling-handbook",
+          "description": "A handbook for building semantic models in enterprise contexts"
+        },
+        {
+          "text": "Storytelling at Notion",
+          "url": "https://builtformars.com/ux-bites/notions-custom-agents",
+          "description": "Notion's custom agents are a masterclass in storytelling and product design"
+        }
+      ],
+      "img": { url: "mb50.png", alt: "Bad AI" }
+    },
+    {
+      "mb": 51,
+      "author": "Hayden",
+      "pills": [
+        {
+          "text": "UX process and minibus bonus",
+          "url": "https://www.figma.com/proto/oo9LHeB4Ootns6RDC9Holh/Minibus?node-id=7921-2955&t=KvlfqFLPM9qNrWZf-0&scaling=scale-down&content-scaling=fixed&page-id=7921%3A2113&starting-point-node-id=7921%3A2955",
+          "description": "AI pressure makes diamonds"
+        },
+        {
+          "text": "Jungle typography",
+          "url": "https://www.famouscampaigns.com/2026/04/brazilian-amazon-gets-a-brand-identity-built-from-its-rivers/",
+          "description": "Next level execution"
+        },
+        {
+          "text": "Salesforce loses it's head",
+          "url": "https://venturebeat.com/ai/salesforce-launches-headless-360-to-turn-its-entire-platform-into-infrastructure-for-ai-agents",
+          "description": "Can you burn a moat?"
+        },
+        {
+          "text": "What is blue anyway?",
+          "url": "https://ismy.blue/",
+          "description": "A fun interactive exploration of the color blue"
+        }
+      ],
+      "img": {
+        url: "mb51.png",
+        alt: "Ligatures that flow"
+      }
     }
   ];
   let mbs_ordered = mbs.sort((a, b) => b.mb - a.mb);
@@ -598,7 +855,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<h1>Thought-pills</h1>
 
 <table class="svelte-1yaxsdd">${each(mbs_ordered, (mb) => {
-    return `<tr class="svelte-1yaxsdd"><td class="svelte-1yaxsdd"><h2>Minibus ${escape(mb.mb)} ${mb.author !== "Hayden" ? `- by ${escape(mb.author)}` : ``}</h2>
+    return `<tr class="svelte-1yaxsdd"><td class="svelte-1yaxsdd"><h2>Minibus ${escape(mb.mb)} - by ${escape(mb.author)}</h2>
             <ul class="svelte-1yaxsdd">${each(mb.pills, (pill) => {
       return `<li>${pill.url == "#" ? `<!-- HTML_TAG_START -->${pill.text}<!-- HTML_TAG_END -->` : `<a${add_attribute("href", pill.url, 0)} target="_blank"${add_attribute("title", pill.description, 0)} class="svelte-1yaxsdd">${escape(pill.text)}</a>`}
                     </li>`;
