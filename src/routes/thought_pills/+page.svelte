@@ -895,7 +895,7 @@
                     "text": "Competition is good",
                     "url": "https://www.theverge.com/tech/909140/microsoft-windows-11-fixes-macbook-neo-response-notepad",
                     "description": "Wakeup call for Microsoft",
-                    "tags": ["tech", "article", "zeitgeist"]
+                    "tags": ["tech", "culture", "article", "zeitgeist"]
                 },
                 {
                     "text": "Bonus: How to be happy",
@@ -982,7 +982,39 @@
                 url: "mb51.png",
                 alt: "Ligatures that flow"
             }
-        }
+        },
+        {
+            "mb": 52,
+            "author": "Hayden",
+            "pills": [
+                {
+                    "text": "Design system as infrastructure",
+                    "url": "https://designsystemscollective.substack.com/p/the-layer-nobody-documented?r=284net&utm_medium=ios&triedRedirect=true",
+                    "description": "The component was never the hard part",
+                    "tags": ["ai", "design", "article", "zeitgeist"]
+                },
+                {
+                    "text": "So last century",
+                    "url": "https://thegeneralpartnership.substack.com/p/the-best-companies-will-stop-making?r=284net&utm_medium=ios&triedRedirect=true",
+                    "description": "The value grab: we've been here before",
+                    "tags": ["ai", "tech", "culture", "article", "zeitgeist"]
+                },
+                {
+                    "text": "Outcomes over outputs, but how?",
+                    "url": "https://www.smashingmagazine.com/2026/03/persuasive-design-ten-years-later/",
+                    "description": "Can you burn a moat?",
+                    "tags": ["ux", "design", "research", "article", "evergreen"]
+                }
+            ],
+            "img": {
+                url: "mb52.png",
+                alt: "The Best Companies Will Stop Making Software"
+            },
+            "quote": {
+                text: "Historically, when a craft evolves into mass production, sources of value creation shift.",
+                attr: "Phin Barnes"
+            }
+        },
     ];
   
    let mbs_ordered = mbs.sort((a, b) => b.mb - a.mb);
@@ -1016,7 +1048,7 @@
 
 <h1>Thought-pills</h1>
 
-<p>A collection of the best content in design, UX, AI, and culture that Minibus has consumed recently. Each Minibus contains 3-5 'pills' - links to articles, videos, tools, or other content that we found interesting. We hope you find them as thought-provoking and inspiring as we did!</p>
+<p class="description">A collection of the best content in design, UX, AI, and culture that Minibus has consumed recently. Each Minibus contains 3-5 'pills' - links to articles, videos, tools, or other content that we found interesting. We hope you find them as thought-provoking and inspiring as we did!</p>
 
 
 <div class="filters">
@@ -1065,6 +1097,9 @@
 </table>
 
 <style>
+    .description, .filters {
+        max-width: 40rem;
+    }
     table {
         width: 100%;
     }

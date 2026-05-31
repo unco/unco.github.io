@@ -1,34 +1,39 @@
 import { c as create_ssr_component, b as each, e as escape, d as add_attribute } from "../../../chunks/index2.js";
 /* empty css                                                   */const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "table.svelte-1b7ly30.svelte-1b7ly30{width:100%}tr.svelte-1b7ly30 td.svelte-1b7ly30{border-bottom:1px solid #eee;padding:20px 0;width:50%;vertical-align:top}img.svelte-1b7ly30.svelte-1b7ly30{max-width:400px;border:12px solid #fff;box-shadow:0 0 32px rgba(0,0,0,0.2)}blockquote.svelte-1b7ly30.svelte-1b7ly30{border-left:3px solid #e95420;margin:1.5rem 0;padding-left:1rem;padding-right:20px;font-style:normal}blockquote.svelte-1b7ly30 em.svelte-1b7ly30{font-style:normal;font-size:2em}ul.svelte-1b7ly30.svelte-1b7ly30{padding:0 }ul.svelte-1b7ly30 ul{margin:0;text-indent:0;padding:16px}ul.svelte-1b7ly30 a.svelte-1b7ly30{color:#111}",
+  code: ".description.svelte-voryla.svelte-voryla,.filters.svelte-voryla.svelte-voryla{max-width:40rem}table.svelte-voryla.svelte-voryla{width:100%}tr.svelte-voryla td.svelte-voryla{border-bottom:1px solid #eee;padding:20px 0;width:50%;vertical-align:top}img.svelte-voryla.svelte-voryla{max-width:400px;border:12px solid #fff;box-shadow:0 0 32px rgba(0,0,0,0.2)}blockquote.svelte-voryla.svelte-voryla{border-left:3px solid #e95420;margin:1.5rem 0;padding-left:1rem;padding-right:20px;font-style:normal}blockquote.svelte-voryla em.svelte-voryla{font-style:normal;font-size:2em}ul.svelte-voryla.svelte-voryla{padding:0 }ul.svelte-voryla ul{margin:0;text-indent:0;padding:16px}ul.svelte-voryla a.svelte-voryla{color:#111}.filters.svelte-voryla .tag.svelte-voryla{cursor:pointer}.tag.svelte-voryla.svelte-voryla{font-size:0.6em;border:1px solid rgba(0,0,0,0.1);padding:2px 6px;border-radius:40px;margin-left:8px;text-transform:uppercase;color:#666;display:inline-block;line-height:1em;background-color:#edf5f6}.tag.active.svelte-voryla.svelte-voryla{background-color:#d0e5ea;border-color:#666;font-weight:bold}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let filteredMbs;
   let mbs = [
     {
       "mb": 17,
       "author": "Hayden",
       "pills": [
         {
-          "text": "Wiio’s laws of communication",
+          "text": "Wiio's laws of communication",
           "url": "https://en.wikipedia.org/wiki/Wiio%27s_laws",
-          "description": "Fun description of how 'Human communications usually fail except by accident'"
+          "description": "Fun description of how 'Human communications usually fail except by accident'",
+          "tags": ["ux", "research", "article", "fun", "evergreen"]
         },
         {
           "text": "Agents are users too",
           "url": "https://biilmann.blog/articles/introducing-ax/",
-          "description": "Designing for ai agents"
+          "description": "Designing for ai agents",
+          "tags": ["ux", "ai", "article", "zeitgeist"]
         },
         {
           "text": "Robots get interesting",
           "url": "https://www.youtube.com/watch?v=MapsWdyanGk",
-          "description": "How google is making robots reason about the physical world"
+          "description": "How google is making robots reason about the physical world",
+          "tags": ["ai", "tech", "video", "zeitgeist"]
         },
         {
           "text": "A multi-billion dollar Glitch",
           "url": "https://techcrunch.com/2019/05/30/the-slack-origin-story/",
-          "description": "Failure is amazing"
+          "description": "Failure is amazing",
+          "tags": ["culture", "article", "inspirational", "evergreen"]
         }
       ],
       "img": {
@@ -43,17 +48,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Time to Aha!",
           "url": "https://uxplanet.org/aha-moment-what-is-it-and-why-should-every-product-have-it-568c3afd3a67",
-          "description": "Do you know when your users have their Eureka moment?"
+          "description": "Do you know when your users have their Eureka moment?",
+          "tags": ["ux", "research", "article", "evergreen"]
         },
         {
-          "text": "Two questions from interviews<br>What’s the difference between management and leadership?<br>What’s the difference between your first 6 months and last 6 months in your role?",
+          "text": "Two questions from interviews<br>What's the difference between management and leadership?<br>What's the difference between your first 6 months and last 6 months in your role?",
           "url": "#",
-          "description": "If you were interviewing right now.. what would your answer be?"
+          "description": "If you were interviewing right now.. what would your answer be?",
+          "tags": ["leadership", "discussion", "evergreen"]
         },
         {
           "text": "Braunalicious",
           "url": "https://www.krfrm.de/events/braundesign-boerse-2025/",
-          "description": "For the upcoming Frankfurt sprint there will be this gem"
+          "description": "For the upcoming Frankfurt sprint there will be this gem",
+          "tags": ["design", "brand", "article", "zeitgeist"]
         }
       ],
       "img": {
@@ -68,17 +76,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Small child UX",
           "url": "https://www.mcsweeneys.net/articles/the-ux-on-this-small-child-is-terrible",
-          "description": "Fun take on parenting"
+          "description": "Fun take on parenting",
+          "tags": ["ux", "article", "fun", "evergreen"]
         },
         {
           "text": "The best e-commerce site",
           "url": "https://www.bedelstein.com/post/mcmaster-carr#",
-          "description": "How we define 'great' matters"
+          "description": "How we define 'great' matters",
+          "tags": ["ux", "design", "article", "evergreen"]
         },
         {
           "text": "Transforming spaces into experiences",
           "url": "https://westernartandarchitecture.com/december-2024-january-2025/perspective-transforming-spaces-into-experiences-richard-serra-1938-2024",
-          "description": "One of my favourite artists and an interesting take on UX"
+          "description": "One of my favourite artists and an interesting take on UX",
+          "tags": ["ux", "culture", "article", "inspirational", "evergreen"]
         }
       ],
       "img": {
@@ -97,17 +108,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Too much fun",
           "url": "https://www.designweek.co.uk/fun-fatigue-is-formality-returning-in-branding/",
-          "description": "Formality in brand design"
+          "description": "Formality in brand design",
+          "tags": ["brand", "design", "article", "zeitgeist"]
         },
         {
           "text": "Too much smiling",
           "url": "https://koto.com/projects/amazon",
-          "description": "Amazon brand transformation by Koto"
+          "description": "Amazon brand transformation by Koto",
+          "tags": ["brand", "design", "article", "zeitgeist"]
         },
         {
           "text": "Too much joy",
-          "url": "https://www.smashingmagazine.com/2023/09/rediscovering-joy-happiness-design/tps://www.krfrm.de/events/braundesign-boerse-2025/",
-          "description": "How to rediscover the joy of design"
+          "url": "https://www.smashingmagazine.com/2023/09/rediscovering-joy-happiness-design/",
+          "description": "How to rediscover the joy of design",
+          "tags": ["design", "culture", "article", "evergreen"]
         }
       ],
       "img": {
@@ -126,22 +140,26 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Consistency (timing!)",
           "url": "https://www.doc.cc/syntax/consistency",
-          "description": "Straight off the back of an intense week with Mark in Frankfurt - The real power of consistency isn't in uniformity, it’s predictability."
+          "description": "Straight off the back of an intense week with Mark in Frankfurt - The real power of consistency isn't in uniformity, it's predictability.",
+          "tags": ["design", "process", "article", "evergreen"]
         },
         {
           "text": "Process redesign",
           "url": "https://digitaldirections.com/principles-business-process-reengineering/",
-          "description": "Designing design"
+          "description": "Designing design",
+          "tags": ["process", "leadership", "article", "evergreen"]
         },
         {
           "text": "Hiring is terrible",
           "url": "https://uxdesign.cc/how-many-designers-does-it-take-to-fix-the-ux-job-market-3b225543aaa2",
-          "description": "Recruiting is a broken loop from which everyone walks away more exhausted"
+          "description": "Recruiting is a broken loop from which everyone walks away more exhausted",
+          "tags": ["leadership", "culture", "article", "critical", "zeitgeist"]
         },
         {
           "text": "Legally blonde",
           "url": "https://uxdesign.cc/ready-or-not-the-eaa-is-here-d9589dfac2fc",
-          "description": "EU UX legal standards are here"
+          "description": "EU UX legal standards are here",
+          "tags": ["accessibility", "ux", "article", "zeitgeist"]
         }
       ],
       "img": {
@@ -155,7 +173,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       "pills": [
         {
           "text": "Maksim (Chief of staff) is looking for<br><ul><li> design impact on roadmap (and product)</li><li>We need UX shaping the roadmap</li><li>Found value in the exercise but also wants us to turn attention to in-flight.. are there issues?</li><li>Arming PMs</li></ul>",
-          "url": "#"
+          "url": "#",
+          "tags": ["leadership", "process", "discussion", "zeitgeist"]
         }
       ],
       "img": {
@@ -170,27 +189,31 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Figma overlord",
           "url": "https://designsystems.international/ideas/when-figma-starts-designing-us/",
-          "description": "The subtle ways in which design tools shape how we think and what we make"
+          "description": "The subtle ways in which design tools shape how we think and what we make",
+          "tags": ["design", "process", "article", "critical", "evergreen"]
         },
         {
           "text": "Oh poor them",
           "url": "https://www.fastcompany.com/91027996/the-big-design-freak-out-a-generation-of-design-leaders-grapple-with-their-future",
-          "description": "Did business really break up with design, or did it just break up with a generation of design leadership?"
+          "description": "Did business really break up with design, or did it just break up with a generation of design leadership?",
+          "tags": ["leadership", "culture", "article", "critical", "zeitgeist"]
         },
         {
-          "text": "How’d that work out?",
+          "text": "How'd that work out?",
           "url": "https://www.fastcompany.com/3028271/ibm-invests-100-million-to-expand-design-business",
-          "description": "How much design does 100 million dollars buy you?"
+          "description": "How much design does 100 million dollars buy you?",
+          "tags": ["leadership", "design", "article", "critical", "evergreen"]
         },
         {
           "text": "Things get better",
           "url": "https://arstechnica.com/tech-policy/2025/07/us-court-cancels-ftc-rule-that-would-have-made-canceling-subscriptions-easier/",
-          "description": "Just when things looked like they were picking up for users"
+          "description": "Just when things looked like they were picking up for users",
+          "tags": ["ux", "tech", "article", "critical", "zeitgeist"]
         }
       ],
       "img": { url: "mb25.png", alt: "Figma juice" },
       "quote": {
-        text: "We’re filling our time with checklists instead of focusing on the very thing that makes designers relevant…",
+        text: "We're filling our time with checklists instead of focusing on the very thing that makes designers relevant…",
         attr: "from the article"
       }
     },
@@ -201,17 +224,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Design = solution",
           "url": "https://grantslatton.com/how-to-design-document",
-          "description": "How to write a good design document"
+          "description": "How to write a good design document",
+          "tags": ["process", "design", "article", "practical", "evergreen"]
         },
         {
           "text": "Fast UX",
           "url": "https://www.catherinejue.com/fast",
-          "description": "On being fast. What does this mean in Canonical context? How many 'fasts' do we have?"
+          "description": "On being fast. What does this mean in Canonical context? How many 'fasts' do we have?",
+          "tags": ["ux", "process", "article", "practical", "evergreen"]
         },
         {
           "text": "What are we doing?",
           "url": "https://uxdesign.cc/its-not-you-your-ux-design-job-is-frustrating-and-unfulfilling-14d5180800d7",
-          "description": "Let's work towards solving this"
+          "description": "Let's work towards solving this",
+          "tags": ["ux", "culture", "article", "critical", "zeitgeist"]
         }
       ],
       "img": {
@@ -225,7 +251,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       "pills": [
         {
           "text": "Apple's limited-time interactive logo:<br>Apple has approximately 160,000 employees.<br><ul><li>How many are dedicated to an aspect of visual/ui/comms design?</li><li>What is the cost of producing an artifact like this one?</li><li>What is the value of it?</li><li>How is that evaluated?</li></ul>",
-          "url": "#"
+          "url": "#",
+          "tags": ["design", "brand", "discussion", "evergreen"]
         }
       ],
       "img": {
@@ -240,22 +267,26 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Less is more",
           "url": "https://www.seangoedecke.com/the-simplest-thing-that-could-possibly-work/",
-          "description": "What is an MVP?"
+          "description": "What is an MVP?",
+          "tags": ["process", "design", "article", "practical", "evergreen"]
         },
         {
           "text": "Vibe coding.. vibe designing? (video)",
           "url": "https://www.youtube.com/watch?v=1A6uPztchXk",
-          "description": "Vibe Coding Is The WORST IDEA Of 2025"
+          "description": "Vibe Coding Is The WORST IDEA Of 2025",
+          "tags": ["ai", "tech", "video", "critical", "zeitgeist"]
         },
         {
           "text": "Design crap",
           "url": "https://uxdesign.cc/why-designing-terrible-solutions-makes-you-a-better-designer-76b2f0f59956",
-          "description": "How to get better by embracing failure"
+          "description": "How to get better by embracing failure",
+          "tags": ["design", "process", "article", "practical", "evergreen"]
         },
         {
           "text": "Designing integrity from... Meta?",
           "url": "https://design.facebook.com/blog/designing-for-safety-and-integrity-in-social-technologies/",
-          "description": "With great power...."
+          "description": "With great power....",
+          "tags": ["ux", "design", "article", "critical", "evergreen"]
         }
       ],
       "img": { url: "mb29.png", alt: "Figma juice" },
@@ -271,12 +302,14 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "AI future 5 - 30 years 😬",
           "url": "https://www.youtube.com/watch?v=UclrVWafRAI",
-          "description": "Scary interview"
+          "description": "Scary interview",
+          "tags": ["ai", "tech", "video", "critical", "zeitgeist"]
         },
         {
           "text": "Design is messy",
           "url": "https://uxdesign.cc/design-is-a-conversation-2af15b555c80",
-          "description": "What is design anyway"
+          "description": "What is design anyway",
+          "tags": ["design", "culture", "article", "evergreen"]
         }
       ],
       "img": {
@@ -291,17 +324,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "User stories + UACs",
           "url": "https://www.prodpad.com/blog/acceptance-criteria-examples/",
-          "description": "The secret to shipping features that work lies in nailing your acceptance criteria"
+          "description": "The secret to shipping features that work lies in nailing your acceptance criteria",
+          "tags": ["process", "ux", "article", "practical", "evergreen"]
         },
         {
           "text": "Anatomy of a good ticket",
           "url": "https://productbrief.github.io/user-story/requirements/writing/2019/04/01/anatomy-of-a-good-ticket.html",
-          "description": "A good ticket is clear, correct, complete, and concise. It uses straightforward grammar, includes background information to aid good decision-making, and sets clear expectations. A good ticket is neither too big nor too small."
+          "description": "A good ticket is clear, correct, complete, and concise.",
+          "tags": ["process", "article", "practical", "evergreen"]
         },
         {
           "text": "Ticket? Spec?",
           "url": "https://heilyhindrea.medium.com/10-must-have-sections-in-your-product-development-tickets-let-your-ticket-template-guide-your-46d61b4e7974",
-          "description": "Nice take aways including thinking whether my development might actually impact anyone else in our organization"
+          "description": "Nice take aways including thinking whether my development might actually impact anyone else in our organization",
+          "tags": ["process", "article", "practical", "evergreen"]
         }
       ],
       "img": {
@@ -316,17 +352,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Poetic airports",
           "url": "https://uxdesign.cc/the-airport-where-we-pretend-to-have-arrived-ef9c1d91834f",
-          "description": "Transitive user experience"
+          "description": "Transitive user experience",
+          "tags": ["ux", "culture", "article", "evergreen"]
         },
         {
           "text": "Capturing intent (support)",
           "url": "https://uxdesign.cc/how-can-ai-ui-capture-intent-d7a6d0393ded",
-          "description": "How can AI UI capture intent? Exploring contextual prompt patterns that capture user intent as it is typed"
+          "description": "How can AI UI capture intent?",
+          "tags": ["ux", "ai", "article", "zeitgeist"]
         },
         {
           "text": "Designers as product managers",
           "url": "https://substack.com/@a16z/note/c-156730267?r=284net&utm_source=notes-share-action&utm_medium=web",
-          "description": "Ben Horowitz on product management - how do I get people to do what I want?"
+          "description": "Ben Horowitz on product management - how do I get people to do what I want?",
+          "tags": ["leadership", "process", "article", "evergreen"]
         }
       ],
       "img": {
@@ -341,22 +380,26 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "MA: Place, space, void",
           "url": "https://kyotojournal.org/culture-arts/ma-place-space-void/",
-          "description": "Learn about 'a system of places'"
+          "description": "Learn about 'a system of places'",
+          "tags": ["design", "culture", "article", "inspirational", "evergreen"]
         },
         {
           "text": "Forget form follows function",
           "url": "https://borism.medium.com/forget-form-follows-function-ae4591821fed",
-          "description": "Controversy ahead!"
+          "description": "Controversy ahead!",
+          "tags": ["design", "article", "critical", "evergreen"]
         },
         {
           "text": "Using moral imagination to bridge design and engineering",
           "url": "https://openreview.net/forum?id=Ir3ZiVGrgl",
-          "description": "Facilitate a culture of responsible innovation for engineering and product teams"
+          "description": "Facilitate a culture of responsible innovation for engineering and product teams",
+          "tags": ["design", "process", "article", "evergreen"]
         },
         {
           "text": "Why everything looks the same",
           "url": "https://substack.com/@a16z/note/c-156730267?r=284net&utm_source=notes-share-action&utm_medium=web",
-          "description": "We’re living in a time where innovation often feels like iteration, and originality gets sanded down in the name of scalability, safety, and familiarity."
+          "description": "We're living in a time where innovation often feels like iteration",
+          "tags": ["design", "culture", "article", "critical", "zeitgeist"]
         }
       ],
       "img": {
@@ -371,17 +414,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Our souls need proof of work",
           "url": "https://lg.substack.com/p/the-looking-glass-our-souls-need",
-          "description": "Hustling competes with YOLO"
+          "description": "Hustling competes with YOLO",
+          "tags": ["culture", "leadership", "article", "evergreen"]
         },
         {
           "text": "Designing Agentic UX",
           "url": "https://uxmag.com/articles/secrets-of-agentic-ux-emerging-design-patterns-for-human-interaction-with-ai-agents",
-          "description": "I for one welcome our new AI serfs"
+          "description": "I for one welcome our new AI serfs",
+          "tags": ["ux", "ai", "article", "zeitgeist"]
         },
         {
           "text": "First principles thinking",
           "url": "https://www.lennysnewsletter.com/p/first-principles-thinking?hide_intro_popup=true",
-          "description": "It's really difficult"
+          "description": "It's really difficult",
+          "tags": ["process", "leadership", "article", "practical", "evergreen"]
         }
       ],
       "img": {
@@ -396,27 +442,32 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Ezra Klein: Tired? Distracted? Burned out? Listen to this.",
           "url": "https://www.youtube.com/watch?v=DzrmTXTaLAI",
-          "description": "I need a holiday"
+          "description": "I need a holiday",
+          "tags": ["culture", "video", "evergreen"]
         },
         {
           "text": "Radiolab: Desperately seeking symmetry",
           "url": "https://www.youtube.com/watch?v=hXlS4GFmVu0",
-          "description": "I for one welcome our new AI serfs"
+          "description": "I for one welcome our new AI serfs",
+          "tags": ["design", "culture", "video", "evergreen"]
         },
         {
           "text": "Radiolab: The medical matchmaking machine",
           "url": "https://www.youtube.com/watch?v=Z9c1a8HbXIo",
-          "description": "Can AI find hidden cures?"
+          "description": "Can AI find hidden cures?",
+          "tags": ["ai", "tech", "video", "zeitgeist"]
         },
         {
           "text": "99% invisible: The Nazi block",
           "url": "https://www.youtube.com/watch?v=yxEEuiRR2OU",
-          "description": "Calling HR!"
+          "description": "Calling HR!",
+          "tags": ["design", "culture", "video", "evergreen"]
         },
         {
           "text": "Science vs creatine: A hack to get jacked",
           "url": "https://podcasts.apple.com/au/podcast/creatine-a-hack-to-get-jacked/id1051557000?i=1000711468882",
-          "description": "This is your brain on drugs"
+          "description": "This is your brain on drugs",
+          "tags": ["culture", "video", "fun", "evergreen"]
         }
       ],
       "img": { url: "mb35.png", alt: "Stressed much?" }
@@ -428,17 +479,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Systems that diminish",
           "url": "https://www.workplaceinsights.co.uk/workplace-disengagement-and-ai/",
-          "description": "AI cruelty"
+          "description": "AI cruelty",
+          "tags": ["ai", "culture", "article", "critical", "zeitgeist"]
         },
         {
           "text": "UX day",
           "url": "https://uxpa.org/world-usability-day/",
-          "description": "awww.. you shouldn't have!"
+          "description": "awww.. you shouldn't have!",
+          "tags": ["ux", "culture", "article", "fun", "zeitgeist"]
         },
         {
           "text": "Design is governance",
           "url": "https://uxdesign.cc/how-design-is-governance-7c8dd466d753",
-          "description": "You are what you govern"
+          "description": "You are what you govern",
+          "tags": ["design", "leadership", "article", "evergreen"]
         }
       ],
       "img": { url: "mb36.png", alt: "AI everywhere" },
@@ -454,17 +508,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "The IKEA effect",
           "url": "https://www.hbs.edu/ris/Publication%20Files/11-091.pdf",
-          "description": "When labor leads to love"
+          "description": "When labor leads to love",
+          "tags": ["research", "ux", "article", "evergreen"]
         },
         {
           "text": "Designing for an unpredictable future",
           "url": "https://uxdesign.cc/we-cant-predict-the-future-but-we-can-design-for-it-079b60bf3bac",
-          "description": "Calling Nostradamus"
+          "description": "Calling Nostradamus",
+          "tags": ["design", "process", "article", "evergreen"]
         },
         {
           "text": "Best career advice",
           "url": "https://www.businessinsider.com/new-goldman-sachs-managing-directors-share-best-career-advice-2025-11",
-          "description": "From an unlikely source"
+          "description": "From an unlikely source",
+          "tags": ["leadership", "article", "evergreen"]
         }
       ],
       "img": {
@@ -477,16 +534,19 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       "author": "Hayden",
       "pills": [
         {
-          "text": "Why do we separate ‘UX design’ and ‘Visual design’?",
-          "url": "#"
+          "text": "Why do we separate 'UX design' and 'Visual design'?",
+          "url": "#",
+          "tags": ["ux", "book", "design", "discussion", "evergreen"]
         },
         {
           "text": "How do you absorb your design space and ideate?",
-          "url": "#"
+          "url": "#",
+          "tags": ["design", "process", "discussion", "evergreen"]
         },
         {
           "text": "How much satisfaction do you get from solving your current problem?",
-          "url": "#"
+          "url": "#",
+          "tags": ["culture", "leadership", "discussion", "evergreen"]
         }
       ],
       "img": { url: "mb38.png", alt: "Sam Durant" }
@@ -498,17 +558,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "The math of why you can't focus",
           "url": "https://justoffbyone.com/posts/math-of-why-you-cant-focus-at-work/",
-          "description": "Hmmn?... What?"
+          "description": "Hmmn?... What?",
+          "tags": ["process", "culture", "article", "evergreen"]
         },
         {
-          "text": "Fedora’s AI-Assisted Contributions Policy",
+          "text": "Fedora's AI-Assisted Contributions Policy",
           "url": "https://docs.fedoraproject.org/en-US/council/policy/ai-contribution-policy/",
-          "description": "That AI really ties the room together"
+          "description": "That AI really ties the room together",
+          "tags": ["ai", "tech", "article", "zeitgeist"]
         },
         {
           "text": "Rococo revival",
           "url": "https://www.nytimes.com/2025/05/27/opinion/trump-oval-office-rococo.html?unlocked_article_code=1.3E8.beN2.eBIibld5Pf6A&smid=url-share",
-          "description": "Trump’s oval office is a gilded Rococo nightmare. Help."
+          "description": "Trump's oval office is a gilded Rococo nightmare. Help.",
+          "tags": ["design", "culture", "article", "fun", "zeitgeist"]
         }
       ],
       "img": { url: "mb39.png", alt: "Oh I wish" }
@@ -520,17 +583,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Design leadership",
           "url": "https://medium.com/defining-experience/what-i-no-longer-believe-about-design-leadership-6fa5ab237d91",
-          "description": "One of the more crisp thinkers on the current changes in design orgs"
+          "description": "One of the more crisp thinkers on the current changes in design orgs",
+          "tags": ["leadership", "design", "article", "zeitgeist"]
         },
         {
-          "text": "Consent? What’s that?",
+          "text": "Consent? What's that?",
           "url": "https://productpicnic.beehiiv.com/p/the-ai-age-is-the-age-of-no-consent-7559",
-          "description": "AI, consent, and the lack thereof"
+          "description": "AI, consent, and the lack thereof",
+          "tags": ["ai", "ux", "article", "critical", "zeitgeist"]
         },
         {
-          "text": "Let’s jam",
+          "text": "Let's jam",
           "url": "https://uxdesign.cc/design-leaders-need-to-jam-with-their-teams-3e05fabd4c38",
-          "description": "Why design jams are fruitful (see what I did there?)"
+          "description": "Why design jams are fruitful (see what I did there?)",
+          "tags": ["leadership", "process", "article", "practical", "evergreen"]
         }
       ],
       "img": {
@@ -538,7 +604,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         alt: "Rick Poyner is consistently interesting"
       },
       "quote": {
-        text: "Strong designers don’t wait for alignment to emerge. They create it by making the call, and holding the line long enough for others to orient.",
+        text: "Strong designers don't wait for alignment to emerge. They create it by making the call, and holding the line long enough for others to orient.",
         attr: "Rachel Kobetz - CDO Paypal"
       }
     },
@@ -549,17 +615,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Relevant design (graphic and UX) trends of the year",
           "url": "https://www.youtube.com/watch?v=bT1tG_E8g-4",
-          "description": "Staying up to date"
+          "description": "Staying up to date",
+          "tags": ["design", "ux", "video", "zeitgeist"]
         },
         {
           "text": "How do we perceive time?",
           "url": "https://www.polytechnique-insights.com/en/columns/neuroscience/brain-how-do-we-experience-time/",
-          "description": "You know, a lotta ins, a lotta outs, lotta what-have-yous."
+          "description": "You know, a lotta ins, a lotta outs, lotta what-have-yous.",
+          "tags": ["research", "culture", "article", "evergreen"]
         },
         {
           "text": "How language affects color",
           "url": "https://www.youtube.com/watch?v=mgxyfqHRPoE",
-          "description": "Teal-ish"
+          "description": "Teal-ish",
+          "tags": ["research", "design", "video", "evergreen"]
         }
       ],
       "img": {
@@ -574,17 +643,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Vibe coded agentic OS + everything SAAS = MicroSlop",
           "url": "https://www.youtube.com/watch?v=DsTlxRKkPyY",
-          "description": "Calling all QAs"
+          "description": "Calling all QAs",
+          "tags": ["ai", "tech", "video", "critical", "zeitgeist"]
         },
         {
           "text": "Effects of AI on the maintainer/contributor",
           "url": "https://www.youtube.com/watch?v=uZy1M_s-8zs",
-          "description": "You want to pull request what??"
+          "description": "You want to pull request what??",
+          "tags": ["ai", "tech", "video", "zeitgeist"]
         },
         {
           "text": "Mafia engagement survey results",
           "url": "https://www.youtube.com/watch?v=BN6Zl0zP108",
-          "description": "Considering a career change?"
+          "description": "Considering a career change?",
+          "tags": ["culture", "video", "fun", "evergreen"]
         }
       ],
       "img": {
@@ -599,32 +671,38 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "The AI wars have begun",
           "url": "https://www.youtube.com/watch?v=FBSam25u8O4",
-          "description": "AI advertising and the war between the big players."
+          "description": "AI advertising and the war between the big players.",
+          "tags": ["ai", "brand", "video", "zeitgeist"]
         },
         {
           "text": "The times they are a changin",
           "url": "https://www.youtube.com/watch?v=_acdhjOLvBs",
-          "description": "When Designers Start Shipping Real Code: Emmet Connolly from Intercom via Hatch Conference"
+          "description": "When Designers Start Shipping Real Code: Emmet Connolly from Intercom via Hatch Conference",
+          "tags": ["design", "tech", "video", "zeitgeist"]
         },
         {
           "text": "Care",
           "url": "https://www.youtube.com/shorts/-YHRb2S4uvg",
-          "description": "Don't forget to breathe in and breathe out"
+          "description": "Don't forget to breathe in and breathe out",
+          "tags": ["culture", "video", "evergreen"]
         },
         {
           "text": "Meatspace career",
           "url": "https://the-decoder.com/a-new-platform-lets-ai-agents-pay-humans-to-do-the-real-world-work-they-cant/",
-          "description": "Who's getting automated?"
+          "description": "Who's getting automated?",
+          "tags": ["ai", "culture", "article", "zeitgeist"]
         },
         {
           "text": "Get your eye in",
           "url": "https://method.ac/type/",
-          "description": "Design is also a physical skill"
+          "description": "Design is also a physical skill",
+          "tags": ["design", "tool", "interactive", "evergreen"]
         },
         {
           "text": "Early 2000s internet culture",
           "url": "https://www.youtube.com/watch?v=Bloiue3mSuA",
-          "description": "A fun jaunt into the past, and a reminder of how much the internet has changed in 30 years"
+          "description": "A fun jaunt into the past, and a reminder of how much the internet has changed in 30 years",
+          "tags": ["culture", "tech", "video", "fun", "evergreen"]
         }
       ],
       "img": { url: "mb43.png", alt: "Love your mother" }
@@ -636,17 +714,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Choose your friends wisely",
           "url": "https://www.youtube.com/watch?v=-MluR9dqt5w",
-          "description": "Model selection matters"
+          "description": "Model selection matters",
+          "tags": ["ai", "tech", "video", "zeitgeist"]
         },
         {
           "text": "See  the upcoming Miro board!",
           "url": "https://miro.com/app/board/uXjVGCWMT-E=/",
-          "description": "What is craft?"
+          "description": "What is craft?",
+          "tags": ["design", "discussion", "zeitgeist"]
         },
         {
           "text": "The end of the office",
           "url": "https://blog.andrewyang.com/p/the-end-of-the-office?hide_intro_popup=truev",
-          "description": "The great disemboweling of white-collar jobs"
+          "description": "The great disemboweling of white-collar jobs",
+          "tags": ["culture", "tech", "article", "critical", "zeitgeist"]
         }
       ],
       "img": { url: "mb44.png", alt: "Love your mother" }
@@ -658,17 +739,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "The internet as morse code",
           "url": "https://www.youtube.com/shorts/ZWqqdLDILDI",
-          "description": "Your view will change"
+          "description": "Your view will change",
+          "tags": ["tech", "culture", "video", "evergreen"]
         },
         {
           "text": "AI theatre",
           "url": "https://uxdesign.cc/the-ai-adoption-theatre-when-innovation-becomes-performance-fd03bb16b0ce",
-          "description": "When innovation becomes performance"
+          "description": "When innovation becomes performance",
+          "tags": ["ai", "culture", "article", "critical", "zeitgeist"]
         },
         {
           "text": "What/who are we designing for?",
           "url": "https://uxdesign.cc/youre-still-designing-for-an-architecture-that-no-longer-exists-28b0b10900dd",
-          "description": "The entire choreography of operating had disappeared"
+          "description": "The entire choreography of operating had disappeared",
+          "tags": ["ux", "ai", "article", "critical", "zeitgeist"]
         }
       ],
       "img": {
@@ -676,7 +760,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         alt: "How -> What, Assist -> Act, Configure -> Evolve"
       },
       "quote": {
-        text: "The space where we work is being replaced by something structurally different. And if you’re still designing screens, flows, and navigation systems, you might be perfecting the blueprint of a building that’s already been demolished.",
+        text: "The space where we work is being replaced by something structurally different. And if you're still designing screens, flows, and navigation systems, you might be perfecting the blueprint of a building that's already been demolished.",
         attr: "Adrian Levy"
       }
     },
@@ -687,17 +771,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Changing shape of things to come",
           "url": "https://www.perplexity.ai/hub/blog/the-ai-is-the-computer",
-          "description": "The AI is the computer"
+          "description": "The AI is the computer",
+          "tags": ["ai", "tech", "article", "zeitgeist"]
         },
         {
           "text": "Outcomes over output",
           "url": "https://www.amazon.com/Outcomes-Over-Output-customer-behavior-ebook/dp/B07QJ1Y8Y5",
-          "description": "Book recommendation"
+          "description": "Book recommendation",
+          "tags": ["process", "leadership", "book", "evergreen"]
         },
         {
           "text": "Machine access denied",
           "url": "https://www.applause.com/blog/why-automated-accessibility-testing-tools-miss-so-much/",
-          "description": "Why automated accessibility testing tools miss so much"
+          "description": "Why automated accessibility testing tools miss so much",
+          "tags": ["accessibility", "ux", "article", "evergreen"]
         }
       ],
       "img": {
@@ -712,17 +799,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "Everything is AI now",
           "url": "https://ixdf.org/master-classes/get-ahead-in-product-design-with-ai",
-          "description": "Course recommendation"
+          "description": "Course recommendation",
+          "tags": ["ai", "ux", "tool", "zeitgeist"]
         },
         {
           "text": "The UX of feelings",
           "url": "https://www.edisonprimary.org/assets/Uploads/Zones-of-Regulation-Parents-Handout.pdf",
-          "description": "A Parents’ Guide to the Zones of Regulation"
+          "description": "A Parents' Guide to the Zones of Regulation",
+          "tags": ["ux", "research", "article", "fun", "evergreen"]
         },
         {
           "text": "Popcorn with your news",
           "url": "https://www.britishpathe.com/",
-          "description": "Explore the world's finest newsreel archives"
+          "description": "Explore the world's finest newsreel archives",
+          "tags": ["culture", "tool", "fun", "evergreen"]
         }
       ],
       "img": {
@@ -737,17 +827,20 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "The changing process",
           "url": "https://goodenoughdesigner.substack.com/p/how-i-use-claude-code-to-vibe-code?r=284net&utm_medium=ios&triedRedirect=true",
-          "description": "Why a design system is so important"
+          "description": "Why a design system is so important",
+          "tags": ["ai", "design", "article", "zeitgeist"]
         },
         {
           "text": "Doom data viz",
           "url": "https://gertvanvugt.substack.com/p/the-final-frontiers",
-          "description": "Every major technology displaced workers"
+          "description": "Every major technology displaced workers",
+          "tags": ["culture", "tech", "article", "zeitgeist"]
         },
         {
           "text": "The last interface",
           "url": "https://uxdesign.cc/the-last-interface-6f488a54fc4e",
-          "description": "Will AI agents kill design as we know it?"
+          "description": "Will AI agents kill design as we know it?",
+          "tags": ["ux", "ai", "article", "critical", "zeitgeist"]
         }
       ],
       "img": {
@@ -762,27 +855,32 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "MCP vs API",
           "url": "https://www.youtube.com/watch?v=7j1t3UZA1TY",
-          "description": "Why a design system is so important"
+          "description": "Why a design system is so important",
+          "tags": ["ai", "tech", "video", "zeitgeist"]
         },
         {
           "text": "We need to breathe",
           "url": "https://www.instagram.com/reel/DW9oUhWjp1R/",
-          "description": "Percolation time"
+          "description": "Percolation time",
+          "tags": ["culture", "video", "evergreen"]
         },
         {
           "text": "Dystopia",
           "url": "https://www.anthropic.com/research/agentic-misalignment",
-          "description": "The call is coming from inside the house"
+          "description": "The call is coming from inside the house",
+          "tags": ["ai", "tech", "article", "critical", "zeitgeist"]
         },
         {
           "text": "Competition is good",
-          "url": "https://www.theverge.com/tech/909140/microsoft-windows-11-fixes-macbook-neo-response-notepad?view_token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6InZPcjJWN1ZyZTgiLCJwIjoiL3RlY2gvOTA5MTQwL21pY3Jvc29mdC13aW5kb3dzLTExLWZpeGVzLW1hY2Jvb2stbmVvLXJlc3BvbnNlLW5vdGVwYWQiLCJleHAiOjE3NzY2NzIwMTUsImlhdCI6MTc3NjI0MDAxNX0.tY_xCW6r2p5mzMoEjUl3aeg1R9sDx1BgcHadcN5CUns&utm_medium=gift-link",
-          "description": "Wakeup call for Microsoft"
+          "url": "https://www.theverge.com/tech/909140/microsoft-windows-11-fixes-macbook-neo-response-notepad",
+          "description": "Wakeup call for Microsoft",
+          "tags": ["tech", "culture", "article", "zeitgeist"]
         },
         {
           "text": "Bonus: How to be happy",
-          "url": "https://www.nytimes.com/interactive/2025/04/28/magazine/how-to-be-happy.html?unlocked_article_code=1.bFA.BhVx.kPNZpxodhHH1&smid=url-share",
-          "description": "Grinches hate this one trick"
+          "url": "https://www.nytimes.com/interactive/2025/04/28/magazine/how-to-be-happy.html",
+          "description": "Grinches hate this one trick",
+          "tags": ["culture", "article", "interactive", "evergreen"]
         }
       ],
       "img": { url: "mb49.png", alt: "Bad AI" }
@@ -794,27 +892,32 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           "text": "An opinionated view of Claude design",
           "url": "https://www.youtube.com/watch?v=IksDIJzfXg8",
-          "description": "Obsolete in 3... 2... 1..."
+          "description": "Obsolete in 3... 2... 1...",
+          "tags": ["ai", "design", "video", "zeitgeist"]
         },
         {
           "text": "Designing for LLMs",
           "url": "https://uxdesign.cc/dear-llm-heres-how-my-design-system-works-b59fb9a342b7",
-          "description": "How to get production-ready code from AI by structuring design systems"
+          "description": "How to get production-ready code from AI by structuring design systems",
+          "tags": ["ai", "design", "article", "zeitgeist"]
         },
         {
           "text": "A romance scam",
           "url": "https://www.youtube.com/watch?v=rjxAYdUe8uU",
-          "description": "Tinder's facecheck sucks"
+          "description": "Tinder's facecheck sucks",
+          "tags": ["ux", "tech", "video", "critical", "zeitgeist"]
         },
         {
           "text": "Semantic modelling for enterprises",
           "url": "https://github.com/canonical/semantic-modelling-handbook",
-          "description": "A handbook for building semantic models in enterprise contexts"
+          "description": "A handbook for building semantic models in enterprise contexts",
+          "tags": ["research", "process", "article", "zeitgeist"]
         },
         {
           "text": "Storytelling at Notion",
           "url": "https://builtformars.com/ux-bites/notions-custom-agents",
-          "description": "Notion's custom agents are a masterclass in storytelling and product design"
+          "description": "Notion's custom agents are a masterclass in storytelling and product design",
+          "tags": ["ux", "ai", "article", "zeitgeist"]
         }
       ],
       "img": { url: "mb50.png", alt: "Who the face?" }
@@ -824,46 +927,105 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       "author": "Hayden",
       "pills": [
         {
-          "text": "UX process and minibus bonus",
+          "text": "UX process and Minibus bonus",
           "url": "https://www.figma.com/proto/oo9LHeB4Ootns6RDC9Holh/Minibus?node-id=7921-2955&t=KvlfqFLPM9qNrWZf-0&scaling=scale-down&content-scaling=fixed&page-id=7921%3A2113&starting-point-node-id=7921%3A2955",
-          "description": "AI pressure makes diamonds"
+          "description": "AI pressure makes diamonds",
+          "tags": ["ux", "process", "tool", "zeitgeist"]
         },
         {
           "text": "Jungle typography",
           "url": "https://www.famouscampaigns.com/2026/04/brazilian-amazon-gets-a-brand-identity-built-from-its-rivers/",
-          "description": "Next level execution"
+          "description": "Next level execution",
+          "tags": ["brand", "design", "article", "inspirational", "zeitgeist"]
         },
         {
           "text": "Salesforce loses it's head",
           "url": "https://venturebeat.com/ai/salesforce-launches-headless-360-to-turn-its-entire-platform-into-infrastructure-for-ai-agents",
-          "description": "Can you burn a moat?"
+          "description": "Can you burn a moat?",
+          "tags": ["ai", "tech", "article", "zeitgeist"]
         },
         {
           "text": "What is blue anyway?",
           "url": "https://ismy.blue/",
-          "description": "A fun interactive exploration of the color blue"
+          "description": "A fun interactive exploration of the color blue",
+          "tags": ["design", "research", "interactive", "fun", "evergreen"]
         }
       ],
       "img": {
         url: "mb51.png",
         alt: "Ligatures that flow"
       }
+    },
+    {
+      "mb": 52,
+      "author": "Hayden",
+      "pills": [
+        {
+          "text": "Design system as infrastructure",
+          "url": "https://designsystemscollective.substack.com/p/the-layer-nobody-documented?r=284net&utm_medium=ios&triedRedirect=true",
+          "description": "The component was never the hard part",
+          "tags": ["ai", "design", "article", "zeitgeist"]
+        },
+        {
+          "text": "So last century",
+          "url": "https://thegeneralpartnership.substack.com/p/the-best-companies-will-stop-making?r=284net&utm_medium=ios&triedRedirect=true",
+          "description": "The value grab: we've been here before",
+          "tags": ["ai", "tech", "culture", "article", "zeitgeist"]
+        },
+        {
+          "text": "Outcomes over outputs, but how?",
+          "url": "https://www.smashingmagazine.com/2026/03/persuasive-design-ten-years-later/",
+          "description": "Can you burn a moat?",
+          "tags": ["ux", "design", "research", "article", "evergreen"]
+        }
+      ],
+      "img": {
+        url: "mb52.png",
+        alt: "The Best Companies Will Stop Making Software"
+      },
+      "quote": {
+        text: "Historically, when a craft evolves into mass production, sources of value creation shift.",
+        attr: "Phin Barnes"
+      }
     }
   ];
   let mbs_ordered = mbs.sort((a, b) => b.mb - a.mb);
+  let allTags = [...new Set(mbs.flatMap((mb) => mb.pills.flatMap((pill) => pill.tags)))].sort();
+  let activeFilters = /* @__PURE__ */ new Set();
   $$result.css.add(css);
+  filteredMbs = activeFilters.size === 0 ? mbs_ordered : mbs_ordered.map((mb) => ({
+    ...mb,
+    pills: mb.pills.filter((pill) => [...activeFilters].some((tag) => pill.tags.includes(tag)))
+  })).filter((mb) => mb.pills.length > 0);
   return `<h1>Thought-pills</h1>
 
-<table class="svelte-1b7ly30">${each(mbs_ordered, (mb) => {
-    return `<tr class="svelte-1b7ly30"><td class="svelte-1b7ly30"><h2>Minibus ${escape(mb.mb)} - by ${escape(mb.author)}</h2>
-            <ul class="svelte-1b7ly30">${each(mb.pills, (pill) => {
-      return `<li>${pill.url == "#" ? `<!-- HTML_TAG_START -->${pill.text}<!-- HTML_TAG_END -->` : `<a${add_attribute("href", pill.url, 0)} target="_blank"${add_attribute("title", pill.description, 0)} class="svelte-1b7ly30">${escape(pill.text)}</a>`}
+<p class="description svelte-voryla">A collection of the best content in design, UX, AI, and culture that Minibus has consumed recently. Each Minibus contains 3-5 &#39;pills&#39; - links to articles, videos, tools, or other content that we found interesting. We hope you find them as thought-provoking and inspiring as we did!</p>
+
+
+<div class="filters svelte-voryla">${each(allTags, (tag) => {
+    return `<button class="${[
+      "tag tag_" + escape(tag, true) + " svelte-voryla",
+      activeFilters.has(tag) ? "active" : ""
+    ].join(" ").trim()}">${escape(tag)}</button>`;
+  })}</div>
+
+
+<table class="svelte-voryla">${each(filteredMbs, (mb) => {
+    return `<tr class="svelte-voryla"><td class="svelte-voryla"><h2>Minibus ${escape(mb.mb)} - by ${escape(mb.author)}</h2>
+            <ul class="svelte-voryla">${each(mb.pills, (pill) => {
+      return `<li>${pill.url == "#" ? `<!-- HTML_TAG_START -->${pill.text}<!-- HTML_TAG_END -->` : `<a${add_attribute("href", pill.url, 0)} target="_blank"${add_attribute("title", pill.description, 0)} class="svelte-voryla">${escape(pill.text)}</a>`}
+                        ${each(pill.tags, (tag) => {
+        return `<span class="${[
+          "tag tag_" + escape(tag, true) + " svelte-voryla",
+          activeFilters.has(tag) ? "active" : ""
+        ].join(" ").trim()}">${escape(tag)}</span>`;
+      })}
                     </li>`;
     })}</ul>
 
-            ${mb.quote ? `<blockquote class="svelte-1b7ly30"><em class="svelte-1b7ly30">${escape(mb.quote.text)}</em> <br> <p>— ${escape(mb.quote.attr)}</p>
+            ${mb.quote ? `<blockquote class="svelte-voryla"><em class="svelte-voryla">${escape(mb.quote.text)}</em> <br> <p>— ${escape(mb.quote.attr)}</p>
                 </blockquote>` : ``}</td>
-        <td class="svelte-1b7ly30"><img src="${"./img/" + escape(mb.img.url, true)}"${add_attribute("alt", mb.img.alt, 0)}${add_attribute("title", mb.img.alt, 0)} class="svelte-1b7ly30"></td>
+        <td class="svelte-voryla"><img src="${"./img/" + escape(mb.img.url, true)}"${add_attribute("alt", mb.img.alt, 0)}${add_attribute("title", mb.img.alt, 0)} class="svelte-voryla"></td>
     </tr>`;
   })}
 </table>`;
