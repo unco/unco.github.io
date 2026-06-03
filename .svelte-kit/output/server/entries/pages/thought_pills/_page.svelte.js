@@ -987,6 +987,37 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         text: "Historically, when a craft evolves into mass production, sources of value creation shift.",
         attr: "Phin Barnes"
       }
+    },
+    {
+      "mb": 53,
+      "author": "Miguel",
+      "pills": [
+        {
+          "text": "Enzo Ferrari rolling in his grave",
+          "url": "https://share.google/DX50Qbgc5PFeXaq71",
+          "description": "At least China won't copy it",
+          "tags": ["design", "brand", "fun", "zeitgeist"]
+        },
+        {
+          "text": "Tokenmaxxing != craftmenship",
+          "url": "https://youtu.be/0zw-Uk9KJiA?si=rkfb2ixYlnIq16Lt",
+          "description": "Just the right amount of tokens?",
+          "tags": ["ai", "tech", "critical", "video", "zeitgeist"]
+        },
+        {
+          "text": "The weird wonderful world of 3d gifs",
+          "url": "https://youtu.be/choF4hqrbz4?si=D7hRMtWMvEu9ki0Y",
+          "description": "My eyes!!",
+          "tags": ["design", "fun", "video", "evergreen"]
+        }
+      ],
+      "img": {
+        url: "mb53.png",
+        alt: "The Best Companies Will Stop Making Software"
+      },
+      "quote": {
+        text: "It's easier to make music nowadays, but still as hard to make a hit."
+      }
     }
   ];
   let mbs_ordered = mbs.sort((a, b) => b.mb - a.mb);
