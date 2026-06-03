@@ -1026,7 +1026,7 @@
                     "tags": ["design", "brand", "fun", "zeitgeist"]
                 },
                 {
-                    "text": "Tokenmaxxing != craftmenship",
+                    "text": "Tokenmaxxing != craftsmanship",
                     "url": "https://youtu.be/0zw-Uk9KJiA?si=rkfb2ixYlnIq16Lt",
                     "description": "Just the right amount of tokens?",
                     "tags": ["ai", "tech", "critical", "video", "zeitgeist"]
