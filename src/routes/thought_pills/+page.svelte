@@ -1116,7 +1116,7 @@
 
             {#if mb.quote}
                 <blockquote>
-                <em>{mb.quote.text}</em> <br> <p>&mdash; {mb.quote.attr}</p>
+                <em>{mb.quote.text}</em> <br> {#if mb.quote.attr !== ''}<p>&mdash; {mb.quote.attr}</p>{/if}
                 </blockquote>   
             {/if}
         </td>
